@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>过啦</title>
+		<link rel="icon" href="img/logo.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="only screen and (min-width:769px)" />
+		<link rel="stylesheet" type="text/css" href="css/index-xs.css" media="only screen and (max-width:768px)" />
+		<style type="text/css">
+			@media (min-width: 768px) {
+				.btn-wrapper {
+					padding-top: 0;
+				}
+			}
+			
+			.btn-wrapper .btn-baoming {
+				width: 200px;
+				height: 48px;
+				line-height: 48px;
+				color: #fff;
+				text-align: center;
+				background-image: url(img/baoming/bm_bg.png);
+				background-size: 100% 100%;
+				margin: 0 auto;
+				font-size: 18px;
+				font-weight: 600;
+				cursor: pointer;
+			}
+			
+			.saomao-wrapper {
+				position: relative;
+			}
+			
+			.saomao-wrapper .hover-wrapper {
+				position: absolute;
+				top: -20px;
+				left: -25px;
+				width: 100px;
+				height: 100px;
+				opacity: 0;
+				transform: scale(.2);
+				transition: all .5s ease-in-out;
+				cursor: pointer;
+				z-index: 2;
+			}
+			
+			.saomao-wrapper .hover-wrapper.active {
+				opacity: 1;
+				top: -100px;
+				transform: scale(1);
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.png" height="100%" />
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="height:1px;">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="tuangou.html">汽车团购</a>
+						</li>
+						<li>
+							<a href="baozhang.html">平台保障</a>
+						</li>
+						<li class="active">
+							<a href="#">报名流程</a>
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<ariticle class="ariticle">
+			<section class="banner">
+				<div id="bannerSwiper" class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class="hidden-xs" src="img/page-liucheng/banner.jpg" alt="" width="100%" />
+							<img class="visible-xs" src="img/page-liucheng/banner_xs.jpg" alt="" width="100%" />
+						</div>
+					</div>
+					<!-- 如果需要分页器 -->
+					<!--<div class="swiper-pagination"></div>-->
+					<!-- 如果需要导航按钮 -->
+					<!--<div class="swiper-button-prev hidden-xs"></div>
+					<div class="swiper-button-next hidden-xs"></div>-->
+				</div>
+			</section>
+			<section class="liucheng-wrapper">
+				<div class="left">
+					<div class="caption">报名前</div>
+					<div class="content">
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/1_xs.png" />
+							</div>
+							<h2 class="title">挑选合适班型</h2>
+							<ul>
+								<li class="text">根据个人情况，挑选合适班型</li>
+								<li>&nbsp;</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/2_xs.png" />
+							</div>
+							<h2 class="title">提供报名信息</h2>
+							<ul>
+								<li class="text">点击立即报名，可进入报名流程填写报名信息，提交报名订单</li>
+								<li class="text">直接拨打客服电话或咨询在线客服，了解驾校详情</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/3_xs.png" />
+							</div>
+							<h2 class="title">客服及时回访</h2>
+							<ul>
+								<li class="text">客服及时回访，帮您选择合适驾校</li>
+								<li class="text">将驾校信息短信发送到您手机</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/4_xs.png" />
+							</div>
+							<h2 class="title">签订驾培合同</h2>
+							<ul>
+								<li class="text">驾校报名，签订驾培合同</li>
+								<li class="text">报名时，请出示您收到的信息进行验证</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/5_xs.png" />
+							</div>
+							<h2 class="title">完成报名体检</h2>
+							<ul>
+								<li class="text">报名完成，可以开始体检，并准备考科目一了</li>
+								<li>&nbsp;</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="caption">报名后</div>
+					<div class="content">
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/1_xs.png" />
+							</div>
+							<h2 class="title">科目一理论考试</h2>
+							<ul>
+								<li class="text">
+									<b id="saoma" class="saomao-wrapper">
+										扫码
+										<div class="hover-wrapper">
+											<img src="img/bottom/weixinhao.jpg" />
+										</div>	
+									</b> 关注过啦学车微信公众号，进行在线练习和模拟考试
+								</li>
+								<li>&nbsp;</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/2_xs.png" />
+							</div>
+							<h2 class="title">科目二小路考</h2>
+							<ul>
+								<li class="text">包含倒车入库、侧方停车、直角转弯、半坡和S弯五个项目。</li>
+								<li class="text">进入过啦学车微信公众号有教学视频可在线学习</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/3_xs.png" />
+							</div>
+							<h2 class="title">科目三大路考</h2>
+							<ul>
+								<li class="text">科目三是道路驾驶技能，一定要胆大心细</li>
+								<li class="text">进入过啦学车微信公众号有教学视频可在线学习</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/4_xs.png" />
+							</div>
+							<h2 class="title">科目四轻松过</h2>
+							<ul>
+								<li class="text">进入过啦学车微信公众号，进行在线练习和模拟考试</li>
+								<li>&nbsp;</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="icon-num">
+								<img src="img/page-liucheng/5_xs.png" />
+							</div>
+							<h2 class="title">拿证</h2>
+							<ul>
+								<li class="text">一证在手，开车无忧</li>
+								<li>&nbsp;</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="hidden-xs">
+				<div class="btn-wrapper baoming-btn-hook">
+					<div class="btn-baoming">我要报名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></div>
+				</div>
+			</section>
+<!--移动端底部fixed定位功能条-->
+		<aside class="fixed-menu-wrapper visible-xs">
+			<div class="fixed-menu">
+				<div class="item zixun udesk-hook-bottom">
+					<img src="img/fixed-menu/zixun.png" />
+					<span>咨询</span>
+				</div>
+				<a class="item bohao" href="tel: 0371-66666128">
+					<img src="img/fixed-menu/dianhua.png" />
+					<span>拨号</span>
+				</a>
+				<div id="baoming-btn" class="item baoming baoming-btn-hook">
+					<img src="img/fixed-menu/baoming.png" />
+					<span>我要报名</span>
+				</div>
+			</div>
+		</aside>
+		<div id="baoming-dailog" class="baoming-dailog">
+			<div class="content">
+				<h2 class="title">免费试学</h2>
+				<ul>
+					<li>
+						<input type="text" name="" id="name" value="" placeholder="姓名" maxlength="10"/>
+					</li>
+					<li>
+						<input type="text" name="" id="tel" value="" placeholder="电话(必填)" maxlength="11"/>
+					</li>
+					<li>
+						<select name="">
+							<option value="">请选择所在区域</option>
+							<option value="金水区">金水区</option>
+							<option value="二七区">二七区</option>
+							<option value="中原区">中原区</option>
+							<option value="惠济区">惠济区</option>
+							<option value="管城区">管城区</option>
+							<option value="经开区">经开区</option>
+							<option value="中牟县">中牟县</option>
+						</select>
+						<div class="icon-xiala"></div>
+					</li>
+					<li>
+						<input class="btn submit-hook" type="button" name="" id="summitInfo" value="我要报名" />
+					</li>
+				</ul>
+				<div class="close-btn">
+					<img src="img/fixed-menu/gb.png" />
+				</div>
+			</div>
+		</div>
+			<!--bottomMenu-->
+			<section class="visible-xs bg-grey">
+				<ul id="menu-wrapper" class="menu-wrapper">
+					<li class="item" data-num="0"><img src="img/bottom/dianhua.png" /></li>
+					<li class="item" data-num="1"><img src="img/bottom/dizhi.png" /></li>
+					<li class="item" data-num="2"><img src="img/bottom/weixin.png" /></li>
+					<li class="item" data-num="3"><img src="img/bottom/weibo.png" /></li>
+					<li class="item" data-num="4"><img src="img/bottom/QQ.png" /></li>
+				</ul>
+				<div id="menu-dailog" class="menu-dailog">
+					<img class="bgimg" src="img/bottom/bg.png" />
+					<div class="content">
+						<img src="img/bottom/weibohao.jpg" />
+					</div>
+					<div class="close-btn">
+						<img src="img/bottom/gb.png" />
+					</div>
+				</div>
+			</section>
+			<!--footer-->
+			<footer class="bottom-footer">
+				<ul class="text-wrapper">
+					<li class="hidden-xs">咨询热线：0371-66666128</li>
+					<li class="hidden-xs">公司地址：郑州市航海路与淮南街交叉口向南50米路东河南交院驾培服务大厅3楼</li>
+					<li>Copyright@2016郑州英驰驾培版权所有 <span class="hidden-xs">豫ICP备16033307号-2</span></li>
+					<li class="visible-xs">豫ICP备16033307号-2</li>
+				</ul>
+				<div class="code-wrapper hidden-xs">
+					<ul class="item">
+						<li class="codeimg">
+							<img src="img/footer/weixin_xz.png" />
+						</li>
+						<li class="iconimg">
+							<img src="img/footer/weixin.png" />
+						</li>
+					</ul>
+					<ul class="item">
+						<li class="iconimg">
+							<a href="http://weibo.com/7712315">
+								<img src="img/footer/weibo.png" />
+							</a>
+						</li>
+					</ul>
+					<ul class="item">
+						<li class="codeimg">
+							<img src="img/footer/qq_xz.png" />
+						</li>
+						<li class="iconimg">
+							<img src="img/footer/qq.png" />
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</ariticle>
+		<!--右侧悬浮-->
+		<aside class="fixed-right-wrapper hidden-xs">
+			<ul id="fixed-right" class="content">
+				<li class="item zixun"></li>
+				<li class="item weixin">
+					<div class="hover-wrapper">
+						<img src="img/bottom/weixinhao.jpg" />
+					</div>
+				</li>
+				<li class="item phone">
+					<div class="hover-wrapper">
+						<h3><b>咨询电话:</b></h3>
+						<p>0371-66666128</p>
+					</div>
+				</li>
+				<li class="item gotop"></li>
+			</ul>
+		</aside>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $saomaHover = $('#saoma .hover-wrapper');
+				$('#saoma').hover(function() {
+						$saomaHover.addClass("active");
+					}, function() {
+						$saomaHover.removeClass("active");
+					})
+					//	我要报名
+				$(".baoming-btn-hook").on("click", function() {
+					$("#baoming-dailog").show();
+				})
+				$("#baoming-dailog").on("click", ".close-btn", function() {
+					$('#baoming-dailog').hide();
+				});
+			})
+		</script>
+		<script src="js/tuangou.js"></script>
+		<script src="js/submitInfo.js"></script>
+	</body>
+
+</html>
