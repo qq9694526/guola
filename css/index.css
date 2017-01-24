@@ -453,6 +453,7 @@ body {
 
 .circle-wrapper .circle {
 	/*border: 2px solid #C7C7C7;*/
+	display: block;
 	border-radius: 50%;
 	line-height: 16px;
 	padding-top: 15px;
@@ -466,6 +467,10 @@ body {
 	transition: all .5s ease-in-out;
 	cursor: pointer;
 	box-shadow: 0 0 5px #808080;
+}
+.circle-wrapper a,a:focus,a:hover,a:visited{
+	color: #808080;
+	text-decoration: none;
 }
 
 .circle-wrapper .circle.active {
@@ -736,7 +741,136 @@ body {
 	font-weight: 600;
 	margin-bottom: 10px;
 }
+/*学员*/
 
+.student-wrapper {
+	width: 70%;
+	padding-bottom: 40px;
+}
+
+.student-wrapper .swiper-slide {
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+.student-wrapper .item {
+	background-color: #fff;
+	font-size: 12px;
+	width: 240px;
+	height: 300px;
+	margin: 0 auto;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	cursor: pointer;
+	border-bottom: 2px solid #CCCCCC;
+}
+.student-wrapper .item:hover{
+	border-bottom: 2px solid #F4AF30;
+}
+.student-wrapper .item .img-normal,
+.student-wrapper .item .name-normal,
+.student-wrapper .item .desc-normal{
+	display: inline-block;
+}
+.student-wrapper .item .img-hover,
+.student-wrapper .item .name-hover,
+.student-wrapper .item .desc-hover
+{
+	display: none;
+}
+.student-wrapper .item:hover .img-normal,
+.student-wrapper .item:hover .name-normal,
+.student-wrapper .item:hover .desc-normal{
+	display: none;
+}
+.student-wrapper .item:hover .img-hover,
+.student-wrapper .item:hover .name-hover,
+.student-wrapper .item:hover .desc-hover
+{
+	display: inline-block;
+}
+
+
+.student-wrapper .item li {
+	line-height: 1;
+}
+.student-wrapper .item li:first-child{
+	height: 180px;
+	position: relative;
+}
+.student-wrapper .item:hover li:first-child{
+	height: 160px;
+	margin-bottom: 20px;
+}
+
+.student-wrapper .item:hover .img-hover {
+	width: 240px;
+	height: 160px;
+}
+.student-wrapper .item .img-normal {
+	position:absolute ;
+	width: 135px;
+	height: 135px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.student-wrapper .item .name {
+	position: relative;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	padding: 0 15px 10px 15px;
+}
+.student-wrapper .item .name:after{
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	content: "";
+	width: 20px;
+	height: 1px;
+	background-color: #F4AF30;
+	
+}
+.student-wrapper .item:hover .name:after{
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.student-wrapper .item:hover .name{
+	text-align: center;
+}
+.student-wrapper .item .desc {
+	padding: 0 15px;
+	font-size: 12px;
+	line-height: 20px;
+}
+.student-num{
+	font-size:0;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.student-num>span{
+	font-size: 26px;
+	margin: 0 5px;
+}
+.student-num .nums{
+	display: inline-block;
+	color: #EB1515;
+}
+.student-num .nums>span{
+	display: inline-block;
+	font-size: 26px;
+	width: 24px;
+	height: 36px;
+	background-image: url(../img/student/szk.png);
+	background-size: 100% 100%;
+	margin-left: 2px;
+}
 
 /*汽车团购*/
 
@@ -752,7 +886,7 @@ body {
 }
 
 .qiche-wrapper .item {
-	background-color: #fff;
+	background-color: #F4F4F4;
 	font-size: 12px;
 	padding: 15px;
 	width: 210px;
@@ -1552,4 +1686,61 @@ body {
 .toast .close-btn img {
 	width: 100%;
 	vertical-align: baseline;
+}
+
+/*直营PK*/
+.pk-wrapper{
+	display: inline-block;
+	padding: 50px 0;
+	margin: 0 auto;
+	font-size: 0;
+}
+.pk-wrapper .term{
+	display: inline-block;
+	text-align: center;
+	margin: 20px 0;
+	border-top: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+.pk-wrapper .term:first-child{
+	border-right: none;
+	border-left: 1px solid #e6e6e6;
+	font-weight: 600;
+}
+
+.pk-wrapper .term.guola{
+	padding-bottom: 20px;
+	margin: 0;
+	border: 1px solid #F4AF30;
+	box-shadow: 0px 0px 5px #F4AF30;
+}
+.pk-wrapper .term.guola .title{
+	background-color: #F4AF30;
+	height: 80px;
+	padding: 20px;
+	line-height: 40px;
+	margin: 0;
+}
+.pk-wrapper .term .title{
+	font-size: 18px;
+	background-color: #F4F4F4;
+	padding:10px 0 ;
+	height: 60px;
+	line-height: 40px;
+	font-weight: 600;
+}
+.pk-wrapper .term .title img{
+	display: block;
+	height: 40px;
+	margin: 0 auto;
+}
+.pk-wrapper .term .item{
+	height: 60px;
+	font-size: 14px;
+	padding: 0 50px;
+	line-height: 60px;
+}
+.pk-wrapper .term.guola .item{
+	padding: 0 60px;
 }

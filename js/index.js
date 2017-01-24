@@ -26,6 +26,13 @@ $(function() {
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev'
 		})
+		var studentSwiper = new Swiper('#studentSwiper', {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			// 如果需要前进后退按钮
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		})
 	} else {
 		var banxingSwiper = new Swiper('#banxingSwiper', {
 			slidesPerView: 6,
@@ -35,6 +42,13 @@ $(function() {
 			prevButton: '.swiper-button-prev'
 		})
 		var qicheSwiper = new Swiper('#qicheSwiper', {
+			slidesPerView: 4,
+			spaceBetween: 20,
+			// 如果需要前进后退按钮
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		})
+		var studentSwiper = new Swiper('#studentSwiper', {
 			slidesPerView: 4,
 			spaceBetween: 20,
 			// 如果需要前进后退按钮

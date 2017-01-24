@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="Description" content="过啦学车，更有保障的学车平台。直营驾校覆盖全城，专注驾培行业30年。自建考场通过率高，1100名教练专业指导；收费透明，一费到底，7天无理由退款，不满意随时更换驾校/教练。" />
 		<title>过啦学车</title>
 		<link rel="icon" href="img/logo.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -12,9 +13,20 @@
 		<link rel="stylesheet" type="text/css" href="css/animate-min.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" media="only screen and (min-width:769px)" />
 		<link rel="stylesheet" type="text/css" href="css/index-xs.css" media="only screen and (max-width:768px)" />
+		<style type="text/css">
+			.zhiying-img {
+				display: block;
+			}
+			
+			.zhiying-img img {
+				display: block;
+				width: 100%;
+			}
+		</style>
 	</head>
 
 	<body>
+		<!--<iframe src="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790" width="1000px" height="600px" style="position: fixed;top: 100px;left: 0;right:0;z-index: 10000;margin: auto;padding: 5px;background-color: #ccc;"></iframe>-->
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -36,13 +48,13 @@
 							<a href="#">首页</a>
 						</li>
 						<li>
-							<a href="tuangou.html">汽车团购</a>
+							<a href="liucheng.html">报名流程</a>
 						</li>
 						<li>
 							<a href="baozhang.html">平台保障</a>
 						</li>
 						<li>
-							<a href="liucheng.html">报名流程</a>
+							<a href="tuangou.html">汽车团购</a>
 						</li>
 						<li>
 							<a href="about.html">关于我们</a>
@@ -53,15 +65,14 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
-
 		<ariticle class="ariticle">
 			<section class="banner">
 				<div id="bannerSwiper" class="swiper-container">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">
+						<!--<div class="swiper-slide">
 							<img class="hidden-xs" src="img/banner/banner5.jpg" alt="" width="100%" />
 							<img class="visible-xs" src="img/banner/banner05_xs.jpg" alt="" width="100%" />
-						</div>
+						</div>-->
 						<div class="swiper-slide">
 							<img class="hidden-xs" src="img/banner/banner1.jpg" alt="" width="100%" />
 							<img class="visible-xs" src="img/banner/banner01_xs.jpg" alt="" width="100%" />
@@ -191,6 +202,10 @@
 					</div>
 				</div>
 			</section>
+
+			<section>
+				<a class="zhiying-img" href="zhiying.html"><img class="hidden-xs" src="img/zhiying/zhiying.jpg" /><img class="visible-xs" src="img/zhiying/zhiying_xs.jpg" /></a>
+			</section>
 			<!--驾校分布-->
 			<section class="bg-grey">
 				<header class="section-title">
@@ -204,25 +219,25 @@
 					<div class="left">
 						<img class="dituimg" src="img/fenbu/ditu.png" />
 						<div class="bubble bubble-huiji">
-							<img src="img/fenbu/huiji.png" />
+							<a href="map.html?area=惠济区"><img src="img/fenbu/huiji.png" /></a>
 						</div>
 						<div class="bubble bubble-jinshui">
-							<img src="img/fenbu/jinshui.png" />
+							<a href="map.html?area=金水区"><img src="img/fenbu/jinshui.png" /></a>
 						</div>
 						<div class="bubble bubble-zhongyuan">
-							<img src="img/fenbu/zhongyuan.png" />
+							<a href="map.html?area=中原区"><img src="img/fenbu/zhongyuan.png" /></a>
 						</div>
 						<div class="bubble bubble-jingkai">
-							<img src="img/fenbu/jingkai.png" />
+							<a href="map.html?area=经开区"><img src="img/fenbu/jingkai.png" /></a>
 						</div>
 						<div class="bubble bubble-zhongmu">
-							<img src="img/fenbu/zhongmou.png" />
+							<a href="map.html?area=中牟县"><img src="img/fenbu/zhongmou.png" /></a>
 						</div>
 						<div class="bubble bubble-erqi">
-							<img src="img/fenbu/erqi.png" />
+							<a href="map.html?area=二七区"><img src="img/fenbu/erqi.png" /></a>
 						</div>
 						<div class="bubble bubble-guancheng">
-							<img src="img/fenbu/guancheng.png" />
+							<a href="map.html?area=管城区"><img src="img/fenbu/guancheng.png" /></a>
 						</div>
 					</div>
 					<div id="fenbu-warpper-right" class="right">
@@ -268,27 +283,27 @@
 								</div>
 							</div>
 							<div class="circle-wrapper circle-quyu">
-								<div class="circle">
+								<a class="circle" href="map.html?area=金水区">
 									<p>金水区</p>
-								</div>
-								<div class="circle">
+								</a>
+								<a class="circle" href="map.html?area=二七区">
 									<p>二七区</p>
-								</div>
-								<div class="circle">
+								</a>
+								<a class="circle" href="map.html?area=惠济区">
 									<p>惠济区</p>
-								</div>
-								<div class="circle">
+								</a>
+								<a class="circle" href="map.html?area=中原区">
 									<p>中原区</p>
-								</div>
-								<div class="circle">
+								</a>
+								<a class="circle" href="map.html?area=管城区">
 									<p>管城区</p>
-								</div>
-								<div class="circle">
+								</a>
+								<a class="circle" href="map.html?area=经开区">
 									<p>经开区</p>
-								</div>
-								<div class="circle">
+								</a>
+								<a class="circle" href="map.html?area=中牟县">
 									<p>中牟县</p>
-								</div>
+								</a>
 							</div>
 						</div>
 						<div class="right-item last-item">
@@ -467,8 +482,102 @@
 					</ul>
 				</div>
 			</section>
-			<!--汽车团购-->
+			<!--他们都在过啦学车-->
 			<section class="bg-grey">
+				<header class="section-title">
+					<!--<h1>过啦驾校分布</h1>-->
+					<img class="hidden-xs" src="img/student/titlet01.png" />
+					<img class="visible-xs" src="img/student/titlet01_xs.png" />
+					<p>专业范儿走起 轻松拿驾照</p>
+					<div class="line"></div>
+				</header>
+				<div id="studentSwiper" class="student-wrapper swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<ul class="item">
+								<li>
+									<img class="img-normal" src="img/student/pj01.png" />
+									<img class="img-hover" src="img/student/pj01_q.jpg" />
+								</li>
+								<li class="name">
+									<sapn class="name-normal">我是李涵涵 一名家庭主妇</sapn>
+									<sapn class="name-hover">李涵涵 家庭主妇</sapn>
+								</li>
+								<li class="desc">
+									<sapn class="desc-normal">辣妈也要拿驾照，在过啦学车找驾校，方便！</sapn>
+									<sapn class="desc-hover">作为俩孩的老妈，学车主要是为了接送孩子，回老家更方便！过啦学车在郑州50多家驾校随便选，学车离家近，教练很有耐心，挺好！</sapn>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-slide">
+							<ul class="item">
+								<li>
+									<img class="img-normal" src="img/student/pj02.png" />
+									<img class="img-hover" src="img/student/pj02_q.jpg" />
+								</li>
+								<li class="name">
+									<sapn class="name-normal">我是陈玲/杨小海 一名学生</sapn>
+									<sapn class="name-hover">陈玲/杨小海 学生</sapn>
+								</li>
+								<li class="desc">
+									<sapn class="desc-normal">学生考驾照，在过啦学车收费透明，放心！</sapn>
+									<sapn class="desc-hover">毕业前，在过啦学车拿到驾照。驾校环境好就不说了，还没有其他杂费，最重要的，帅哥美女多......</sapn>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-slide">
+							<ul class="item">
+								<li>
+									<img class="img-normal" src="img/student/pj03.png" />
+									<img class="img-hover" src="img/student/pj03_q.jpg" />
+								</li>
+								<li class="name">
+									<sapn class="name-normal">我是许晨光 一名白领</sapn>
+									<sapn class="name-hover">许晨光 白领</sapn>
+								</li>
+								<li class="desc">
+									<sapn class="desc-normal">白领学车45天拿到驾照，在过啦学车效率高！</sapn>
+									<sapn class="desc-hover">平常上班太忙没时间，刚好看到有夜班，果断报了名。拿证速度完全惊喜，现在驾照到手，出差再也不愁了！</sapn>
+								</li>
+							</ul>
+						</div>
+						<div class="swiper-slide">
+							<ul class="item">
+								<li>
+									<img class="img-normal" src="img/student/pj04.png" />
+									<img class="img-hover" src="img/student/pj04_q.jpg" />
+								</li>
+								<li class="name">
+									<sapn class="name-normal">我是张辉 一名个企老板</sapn>
+									<sapn class="name-hover">张辉 个企老板</sapn>
+								</li>
+								<li class="desc">
+									<sapn class="desc-normal">老板学车专人专车随到随学，在过啦学车省心！</sapn>
+									<sapn class="desc-hover">平常事情多，抽空学车不容易，在过啦学车报了贵宾班，随到随学，1对1教练，感觉两个字：得劲！</sapn>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 如果需要导航按钮 -->
+					<div class="swiper-button-prev visible-xs circle-prev"></div>
+					<div class="swiper-button-next visible-xs circle-prev"></div>
+				</div>
+				<div class="student-num">
+					<span>已帮助</span>
+					<div id="studentNum" class="nums">
+						<span>1</span>
+						<span>7</span>
+						<span>3</span>
+						<span>6</span>
+						<span>8</span>
+						<span>5</span>
+					</div>
+					<span>人成功拿到驾照</span>
+				</div>
+			</section>
+
+			<!--汽车团购-->
+			<section>
 				<header class="section-title">
 					<!--<h1>汽车团购</h1>-->
 					<img class="hidden-xs" src="img/qiche/title06.png" />
@@ -572,7 +681,7 @@
 		<!--移动端底部fixed定位功能条-->
 		<aside class="fixed-menu-wrapper visible-xs">
 			<div class="fixed-menu">
-				<a class="item zixun udesk-hook-bottom" href="http://p.qiao.baidu.com/cps/chat?siteId=10306436&userId=10608107">
+				<a class="item zixun udesk-hook-bottom" data-href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790">
 					<img src="img/fixed-menu/zixun.png" />
 					<span>咨询</span>
 				</a>
@@ -621,7 +730,9 @@
 		<!--右侧悬浮-->
 		<aside class="fixed-right-wrapper hidden-xs">
 			<ul id="fixed-right" class="content">
-				<li class="item zixun udesk-hook-right"><a style="display: block;width: 100%;height: 100%;" href="http://p.qiao.baidu.com/cps/chat?siteId=10306436&userId=10608107"></a></li>
+				<li class="item zixun udesk-hook-right">
+					<a style="display: block;width: 100%;height: 100%;" data-href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790"></a>
+				</li>
 				<li class="item weixin">
 					<div class="hover-wrapper">
 						<h3 style="text-align: center;"><b>微信扫码关注</b></h3>
@@ -672,16 +783,34 @@
 		<script type="text/javascript" src="js/swiper.min.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/submitInfo.js"></script>
-		<script>
-			var _hmt = _hmt || [];
-			(function() {
-				var hm = document.createElement("script");
-				hm.src = "https://hm.baidu.com/hm.js?803eec3b50b31d07f882b57a1d47f3d9";
-				var s = document.getElementsByTagName("script")[0];
-				s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
+		<script type="text/javascript">
+			$(function() {
+				var baseNum = 173685;
+				baseDate = 1485136566699;
+				oneDay = 86400000;
+				nowDate = new Date().getTime(),
+					i = parseInt((nowDate - baseDate) / oneDay),
+					addNums = 179 * i,
+					newNums = baseNum + addNums,
+					arrNums = newNums.toString().split(""),
+					len = arrNums.length,
+					$studentNum = $("#studentNum"),
+					html = "";
+				for(var i = 0; i < len; i++) {
+					html += '<span>' + arrNums[i] + '</span>';
+				}
+				$studentNum.html(html);
 
+				$("a").on("click",function(){
+					if($(this).attr("data-href")){
+						open_win();
+					}
+				})
+				function open_win() {
+					window.open("http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790", "_blank", "toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=600, height=500")
+				}
+			})
+		</script>
 	</body>
 
 </html>

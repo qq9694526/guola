@@ -139,6 +139,10 @@ table {
 a {
 	text-decoration: none;
 }
+a:focus,a:hover,a:visited{
+	text-decoration: none;
+}
+
 
 input:focus {
 	outline: none;
