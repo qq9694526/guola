@@ -118,13 +118,6 @@ $(function() {
 	$("#menu-dailog").on("click", ".close-btn", function() {
 		$('#menu-dailog').hide().find(".content").html("");
 	});
-	//	我要报名
-	$(".baoming-btn-hook").on("click", function() {
-		$("#baoming-dailog").show();
-	})
-	$("#baoming-dailog").on("click", ".close-btn", function() {
-		$('#baoming-dailog').hide();
-	});
 //	右侧悬浮窗
 	$("#fixed-right .item").hover(function(){
 		$(this).addClass("hover");

@@ -156,6 +156,7 @@
 					background-color: #282B33;
 				}
 			}
+			
 			.select-wrapper {
 				position: fixed;
 				top: 50px;
@@ -210,6 +211,7 @@
 		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=CwIti9yChQ7X71KYI0yi6nkr"></script>
 		<!--<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
 	</head>
+
 	<body>
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
@@ -221,7 +223,7 @@
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
       				</button>
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" href="index.html">
 						<img src="img/logo.png" height="100%" />
 					</a>
 				</div>
@@ -229,7 +231,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
 					<ul class="nav navbar-nav">
 						<li class="active">
-							<a href="#">首页</a>
+							<a href="index.html">首页</a>
 						</li>
 						<li>
 							<a href="liucheng.html">报名流程</a>
@@ -261,45 +263,30 @@
 				<li class="item" data-area="中牟县">中牟县</li>
 			</ul>
 		</div>
+		<!--右侧悬浮-->
+		<aside class="fixed-right-wrapper hidden-xs">
+			<ul id="fixed-right" class="content">
+				<li class="item baoming baoming-btn-hook"></li>
+				<li class="item zixun udesk-hook-right">
+					<a style="display: block;width: 100%;height: 100%;" data-href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790"></a>
+				</li>
+				<li class="item weixin">
+					<div class="hover-wrapper">
+						<h3 style="text-align: center;"><b>微信扫码关注</b></h3>
+						<img src="img/bottom/weixinhao.jpg" />
+					</div>
+				</li>
+				<li class="item phone">
+					<div class="hover-wrapper">
+						<h3><b>咨询电话:</b></h3>
+						<p>0371-66666128</p>
+					</div>
+				</li>
+				<li class="item gotop"></li>
+			</ul>
+		</aside>
 		<div class="main">
 			<div id="allmap"></div>
-			<!--footer-->
-			<footer class="bottom-footer">
-				<ul class="text-wrapper">
-					<li class="hidden-xs">咨询热线：0371-66666128</li>
-					<li class="hidden-xs">公司地址：郑州市航海路与淮南街交叉口向南50米路东河南交院驾培服务大厅3楼</li>
-					<li>Copyright@2016郑州英驰驾培版权所有 <span class="hidden-xs">豫ICP备16033307号-2</span></li>
-					<li class="visible-xs">豫ICP备16033307号-2</li>
-				</ul>
-				<div class="code-wrapper hidden-xs">
-					<ul class="item">
-						<li class="codeimg">
-							<img src="img/footer/weixin_xz.png" />
-						</li>
-						<li class="iconimg">
-							<img src="img/footer/weixin.png" />
-						</li>
-					</ul>
-					<ul class="item">
-						<!--<li class="codeimg">
-							<img src="img/footer/weibo_xz.png" />
-						</li>-->
-						<li class="iconimg">
-							<a href="http://weibo.com/7712315">
-								<img src="img/footer/weibo.png" />
-							</a>
-						</li>
-					</ul>
-					<ul class="item">
-						<li class="codeimg">
-							<img src="img/footer/qq_xz.png" />
-						</li>
-						<li class="iconimg">
-							<img src="img/footer/qq.png" />
-						</li>
-					</ul>
-				</div>
-			</footer>
 		</div>
 		<div id="control-wrapper" class="control-wrapper hidden-xs">
 			<div class="caption">过啦驾校区域分布</div>
@@ -362,8 +349,72 @@
 			</section>
 
 		</div>
+		<!--我要报名dailog-->
+		<div id="baoming-dailog" class="baoming-dailog">
+			<div class="content">
+				<h2 class="title">免费试学</h2>
+				<ul>
+					<li>
+						<input type="text" name="" id="name" value="" placeholder="姓名" maxlength="10" />
+					</li>
+					<li>
+						<input type="text" name="" id="tel" value="" placeholder="电话(必填)" maxlength="11" />
+					</li>
+					<li>
+						<select name="">
+							<option value="">请选择所在区域</option>
+							<option value="金水区">金水区</option>
+							<option value="二七区">二七区</option>
+							<option value="中原区">中原区</option>
+							<option value="惠济区">惠济区</option>
+							<option value="管城区">管城区</option>
+							<option value="经开区">经开区</option>
+							<option value="中牟县">中牟县</option>
+						</select>
+						<div class="icon-xiala"></div>
+					</li>
+					<li>
+						<input class="btn submit-hook" type="button" name="" value="我要报名" />
+					</li>
+				</ul>
+				<div class="close-btn">
+					<img src="img/fixed-menu/gb.png" />
+				</div>
+			</div>
+		</div>
+		<!--toast-->
+		<div id="result-wrapper" class="toast">
+			<div class="success content">
+				<h2 class="title">
+					<img src="img/toast/chenggong.png"/>
+					<span>提交成功</span>
+				</h2>
+				<div class="text">
+					<p style="margin-bottom: 25px;">您的信息已提交成功，请您耐心等待，客服会在半小时内尽快与您联系！</p>
+					<p class="text-right">工作时间：周一至周六</p>
+					<p class="text-right">09:00-17:30</p>
+				</div>
+				<div class="close-btn close-hook">
+					<img src="img/fixed-menu/gb.png" />
+				</div>
+			</div>
+			<div class="fail content">
+				<h2 class="title">
+					<img src="img/toast/shibai.png"/>
+					<span>提交失败</span>
+				</h2>
+				<div class="text">
+					<p style="margin-bottom: 25px;">对不起，网络不稳定，信息提交失败请您稍等再重试一次。</p>
+				</div>
+				<div class="btn close-hook">重试</div>
+				<div class="close-btn close-hook">
+					<img src="img/fixed-menu/gb.png" />
+				</div>
+			</div>
+		</div>
 		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script src="js/submitInfo.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				//选择区域下拉
@@ -406,13 +457,15 @@
 				$("#menu-dailog").on("click", ".close-btn", function() {
 					$('#menu-dailog').hide().find(".content").html("");
 				});
-				//	我要报名
-				$(".baoming-btn-hook").on("click", function() {
-					$("#baoming-dailog").show();
+				//	右侧悬浮窗
+				$("#fixed-right .item").hover(function() {
+					$(this).addClass("hover");
+				}, function() {
+					$(this).removeClass("hover");
 				})
-				$("#baoming-dailog").on("click", ".close-btn", function() {
-					$('#baoming-dailog').hide();
-				});
+				$("#fixed-right .gotop").on("click", function() {
+					$(document).scrollTop(0);
+				})
 			})
 		</script>
 	</body>
@@ -440,13 +493,13 @@
 		nowArea = data_area[district];
 	map.centerAndZoom(new BMap.Point(nowArea[0], nowArea[1]), 12);
 	if(district != "郑州市") {
-		var zoom=14;
+		var zoom = 14;
 		var dWidth = $("body ").width();
-		if(dWidth<=768){
-			zoom=13;
+		if(dWidth <= 768) {
+			zoom = 13;
 			$("#selecter").find(".name").text(district);
 		}
-		goArea(district,zoom);
+		goArea(district, zoom);
 		$(".title").each(function(i, n) {
 			var area = $(n).attr("data-area");
 			if(area == district) {
@@ -519,17 +572,17 @@
 		map.openInfoWindow(infoWindow, point); //开启信息窗口
 	});
 	//移动端选择区域
-	$("#selecter").on("click",".item",function(){
-		var qu=$(this).attr("data-area");
-		goArea(qu,13);
-		$("#selecter").removeClass("open").find(".name").text(qu);
-	})
-	//PC端选择区域
+	$("#selecter").on("click", ".item", function() {
+			var qu = $(this).attr("data-area");
+			goArea(qu, 13);
+			$("#selecter").removeClass("open").find(".name").text(qu);
+		})
+		//PC端选择区域
 	$("#control-wrapper").on("click", ".title", function() {
-		var qu=$(this).attr("data-area");
-		goArea(qu,14);
+		var qu = $(this).attr("data-area");
+		goArea(qu, 14);
 	})
-	
+
 	function addClickHandler(content, marker) {
 		marker.addEventListener("click", function(e) {
 			getFocus(marker)
@@ -575,9 +628,9 @@
 		}, 2000);
 	}
 
-	function goArea(qu,zoom) {
+	function goArea(qu, zoom) {
 		var point = data_area[qu];
-		var zoom=zoom||14;
+		var zoom = zoom || 14;
 		map.setZoom(zoom);
 		map.panTo(new BMap.Point(point[0], point[1]));
 	}

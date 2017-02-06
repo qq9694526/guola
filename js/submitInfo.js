@@ -1,4 +1,32 @@
 $(function() {
+	$("a").on("click", function() {
+					if($(this).attr("data-href")) {
+						openWin();
+					}
+				})
+				function openWin() {
+					var dWidth = $("body ").width();
+					var url = 'http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790'; //转向网页的地址; 
+					if(dWidth < 768) {
+						window.open(url);
+					} else {
+						var name = ''; //网页名称，可为空; 
+						var iWidth = 800; //弹出窗口的宽度; 
+						var iHeight = 600; //弹出窗口的高度; 
+						//获得窗口的垂直位置 
+						var iTop = (window.screen.availHeight - 30 - iHeight) / 2;
+						//获得窗口的水平位置 
+						var iLeft = (window.screen.availWidth - 10 - iWidth) / 2;
+						window.open(url, name, 'height=' + iHeight + ',,innerHeight=' + iHeight + ',width=' + iWidth + ',innerWidth=' + iWidth + ',top=' + iTop + ',left=' + iLeft + ',status=no,toolbar=no,menubar=no,location=no,resizable=no,scrollbars=0,titlebar=no');
+					}
+				}
+		//	我要报名
+	$(".baoming-btn-hook").on("click", function() {
+		$("#baoming-dailog").show();
+	})
+	$("#baoming-dailog").on("click", ".close-btn", function() {
+		$('#baoming-dailog').hide();
+	});
 	$(".submit-hook").on("click", function() {
 		var $inputs = $(this).parent().siblings().find("input"),
 		 	$select = $(this).parent().siblings().find("select"),

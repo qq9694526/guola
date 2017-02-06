@@ -26,7 +26,7 @@
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
       				</button>
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" href="index.html">
 						<img src="img/logo.png" height="100%" />
 					</a>
 				</div>
@@ -162,7 +162,7 @@
 			<!--移动端底部fixed定位功能条-->
 		<aside class="fixed-menu-wrapper visible-xs">
 			<div class="fixed-menu">
-				<a class="item zixun udesk-hook-bottom" href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790">
+				<a class="item zixun udesk-hook-bottom" data-href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790">
 					<img src="img/fixed-menu/zixun.png" />
 					<span>咨询</span>
 				</a>
@@ -265,9 +265,11 @@
 		<!--右侧悬浮-->
 		<aside class="fixed-right-wrapper hidden-xs">
 			<ul id="fixed-right" class="content">
-				<li class="item zixun"><a style="display: block;width: 100%;height: 100%;" href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790"></a></li>
+				<li class="item baoming baoming-btn-hook"></li>
+				<li class="item zixun"><a style="display: block;width: 100%;height: 100%;" data-href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790"></a></li>
 				<li class="item weixin">
 					<div class="hover-wrapper">
+						<h3 style="text-align: center;"><b>微信扫码关注</b></h3>
 						<img src="img/bottom/weixinhao.jpg" />
 					</div>
 				</li>
@@ -280,7 +282,69 @@
 				<li class="item gotop"></li>
 			</ul>
 		</aside>
-		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		<!--我要报名dailog-->
+		<div id="baoming-dailog" class="baoming-dailog">
+			<div class="content">
+				<h2 class="title">免费试学</h2>
+				<ul>
+					<li>
+						<input type="text" name="" id="name" value="" placeholder="姓名" maxlength="10" />
+					</li>
+					<li>
+						<input type="text" name="" id="tel" value="" placeholder="电话(必填)" maxlength="11" />
+					</li>
+					<li>
+						<select name="">
+							<option value="">请选择所在区域</option>
+							<option value="金水区">金水区</option>
+							<option value="二七区">二七区</option>
+							<option value="中原区">中原区</option>
+							<option value="惠济区">惠济区</option>
+							<option value="管城区">管城区</option>
+							<option value="经开区">经开区</option>
+							<option value="中牟县">中牟县</option>
+						</select>
+						<div class="icon-xiala"></div>
+					</li>
+					<li>
+						<input class="btn submit-hook" type="button" name="" value="我要报名" />
+					</li>
+				</ul>
+				<div class="close-btn">
+					<img src="img/fixed-menu/gb.png" />
+				</div>
+			</div>
+		</div>
+		<!--toast-->
+		<div id="result-wrapper" class="toast">
+			<div class="success content">
+				<h2 class="title">
+					<img src="img/toast/chenggong.png"/>
+					<span>提交成功</span>
+				</h2>
+				<div class="text">
+					<p style="margin-bottom: 25px;">您的信息已提交成功，请您耐心等待，客服会在半小时内尽快与您联系！</p>
+					<p class="text-right">工作时间：周一至周六</p>
+					<p class="text-right">09:00-17:30</p>
+				</div>
+				<div class="close-btn close-hook">
+					<img src="img/fixed-menu/gb.png" />
+				</div>
+			</div>
+			<div class="fail content">
+				<h2 class="title">
+					<img src="img/toast/shibai.png"/>
+					<span>提交失败</span>
+				</h2>
+				<div class="text">
+					<p style="margin-bottom: 25px;">对不起，网络不稳定，信息提交失败请您稍等再重试一次。</p>
+				</div>
+				<div class="btn close-hook">重试</div>
+				<div class="close-btn close-hook">
+					<img src="img/fixed-menu/gb.png" />
+				</div>
+			</div>
+		</div><script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		<script type="text/javascript" src="js/swiper.min.js"></script>
 		<script src="js/tuangou.js"></script>
