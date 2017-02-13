@@ -5,6 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<meta name="Description" content="过啦学车，更有保障的学车平台。直营驾校覆盖全城，专注驾培行业30年。自建考场通过率高，1100名教练专业指导；收费透明，一费到底，7天无理由退款，不满意随时更换驾校/教练。" />
+        <meta name="keywords" content="" />
 		<link rel="icon" href="img/logo.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -117,16 +118,25 @@
 				width: 100%;
 				height: 100%;
 				padding-top: 80px;
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
-				flex-direction: column;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
 			}
 			
 			.main #allmap {
-				flex: 1;
+				-webkit-box-flex: 1;
+				    -ms-flex: 1;
+				        flex: 1;
 			}
 			
 			.main .bottom-footer {
-				flex: 0 0 152px;
+				-webkit-box-flex: 0;
+				    -ms-flex: 0 0 152px;
+				        flex: 0 0 152px;
 			}
 			
 			.bottom-footer {
@@ -146,10 +156,14 @@
 					padding-top: 90px;
 				}
 				.main #allmap {
-					flex: 1;
+					-webkit-box-flex: 1;
+					    -ms-flex: 1;
+					        flex: 1;
 				}
 				.main .bottom-footer {
-					flex: 0 0 68px;
+					-webkit-box-flex: 0;
+					    -ms-flex: 0 0 68px;
+					        flex: 0 0 68px;
 				}
 				.bottom-footer {
 					padding: 10px 0;

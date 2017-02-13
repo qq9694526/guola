@@ -67,7 +67,8 @@ section{
 	left: 60px;
 	background-image: url(../img/l_btn.png);
 	    -webkit-transform: translateY(-50%);
-	            transform: translateY(-50%);
+	            -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 .swiper-button-prev.circle-prev{
 	left: 5%;
@@ -82,7 +83,8 @@ section{
 	right: 60px;
 	background-image: url(../img/r_btn.png);
 	    -webkit-transform: translateY(-50%);
-	            transform: translateY(-50%);
+	            -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 .swiper-button-next.circle-prev{
 	right: 5%;
@@ -189,8 +191,8 @@ section{
 	/*text-align: center;*/
 }
 .promise-wrapper .right{
-	font-size: 12px;
-	line-height: 22px;
+	font-size: 14px;
+	line-height: 44px;
 }
 /*过啦驾校分布*/
 .fenbu-warpper{
@@ -412,92 +414,106 @@ section{
 	padding-bottom: 20px;
 	width: 90%;
 }
-.banxing-wrapper.swiper-container{
-	/*overflow: inherit;*/
+.banxing-wrapper .swiper-slide.active .item{
+	display: block;
 }
-.banxing-wrapper .swiper-slide{
+.banxing-wrapper .swiper-slide.active .face{
+	display: none;
 }
-.banxing-wrapper .item{
-	font-size: 10px;
-	/*background-color: #FDFBF3;*/
-	border-bottom-right-radius: 30px;
-	border-top-left-radius: 30px;
+
+.banxing-wrapper .item {
+	display: none;
+	font-size: 12px;
 	text-align: center;
-	margin:0 auto;
-	width: 140px;
-	height: 230px;
-    padding: 20px 0;
+	margin: 0 auto;
+	width: 170px;
+	height: 252px;
+	padding: 20px 0;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	color: #fff;
 }
-.banxing-wrapper .item.active{
-	/*background-color: #F4AF30;
-	color: #fff;*/
+.banxing-wrapper .face{
+	font-size: 12px;
+	text-align: center;
+	margin: 0 auto;
+	width: 170px;
+	height: 252px;
+	cursor: pointer;
+	border-left: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
 }
-.banxing-wrapper .item li{
-	margin-bottom: 8px;
+.banxing-wrapper .face .title{
+	font-size: 18px;
+	font-weight: 600;
+	padding: 20px 0;
+}
+.banxing-wrapper .face .img{
+	width: 150px;
+}
+
+.banxing-wrapper .item li {
+	margin-bottom: 10px;
 	line-height: 1;
 }
-.banxing-wrapper .item .img-wrapper{
+
+.banxing-wrapper .item .img-wrapper {
 	display: block;
-	width: 70px;
-	height: 70px;
-	margin: 0 auto 10px auto;
+	width: 80px;
+	height: 80px;
+	margin: 0 auto 15px auto;
 	background-size: 100% 100%;
 }
-.banxing-wrapper .putong {
-	background-image: url(../img/banxing/putong01.png);
+
+.banxing-wrapper .putong .item{
+	background-color: #F3B950;
+}
+.banxing-wrapper .putong .img-wrapper{
+	background-image: url(../img/banxing/putong_xz.png);
+}
+.banxing-wrapper .putong .line{
+	background-color: #F3B950;
+	height: 4px;
 }
 
-.banxing-wrapper .active .putong {
-	background-image: url(../img/banxing/putong.png);
+.banxing-wrapper .vip .item{
+	background-color: #25A856;
+}
+.banxing-wrapper .vip .img-wrapper{
+	background-image: url(../img/banxing/vip_xz.png);
+}
+.banxing-wrapper .vip .line{
+	background-color: #25A856;
+	height: 4px;
 }
 
-.banxing-wrapper .vip {
-	background-image: url(../img/banxing/vip01.png);
+.banxing-wrapper .yeban .item{
+	background-color: #45BBFC;
 }
-
-.banxing-wrapper .active .vip {
-	background-image: url(../img/banxing/vip.png);
+.banxing-wrapper .yeban .img-wrapper{
+	background-image: url(../img/banxing/yeban_xz.png);
 }
-
-.banxing-wrapper .yeban {
-	background-image: url(../img/banxing/yeban01.png);
+.banxing-wrapper .yeban .line{
+	background-color: #45BBFC;
+	height: 4px;
 }
-
-.banxing-wrapper .active .yeban {
-	background-image: url(../img/banxing/yeban.png);
+.banxing-wrapper .zidongdang .item{
+	background-color: #F77479;
 }
-
-.banxing-wrapper .zidongdang {
-	background-image: url(../img/banxing/zidongdang01.png);
+.banxing-wrapper .zidongdang .img-wrapper{
+	background-image: url(../img/banxing/zidongdang_xz.png);
 }
-
-.banxing-wrapper .active .zidongdang {
-	background-image: url(../img/banxing/zidongdang.png);
+.banxing-wrapper .zidongdang .line{
+	background-color: #F77479;
+	height: 5px;
 }
-
-.banxing-wrapper .guibin {
-	background-image: url(../img/banxing/guibin01.png);
+.banxing-wrapper .img-wrapper img {
+	width: 80px;
+	height: 80px;
 }
-
-.banxing-wrapper .active .guibin {
-	background-image: url(../img/banxing/guibin.png);
-}
-
-.banxing-wrapper .baoma {
-	background-image: url(../img/banxing/baoma01.png);
-}
-
-.banxing-wrapper .active .baoma {
-	background-image: url(../img/banxing/baoma.png);
-}
-
-
-
-/*.banxing-wrapper .img-wrapper img{
-	width: 70px;
-	height: 70px;
-}*/
-.banxing-wrapper .item .title{
+.banxing-wrapper .item .title {
 	font-size: 12px;
 	font-weight: 600;
 	margin-bottom: 10px;
@@ -813,7 +829,8 @@ section{
 	left: 0;
 	right: 0;
 	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	        -ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
 	margin: 0 auto;
 }
 .menu-dailog .content img{
@@ -934,7 +951,8 @@ section{
 	width: 75%;
 	margin: 0 auto;
 	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	        -ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
 	background-color: #fff;
 	border-radius: 5px;
 	text-align: center;
@@ -1159,7 +1177,8 @@ section{
 	left: 0;
 	text-align: center;
 	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	        -ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
 }
 .nav-banner .item{
 	display: inline-block;
@@ -1347,6 +1366,7 @@ position: absolute;
 	background-size: 100% 100%;
 }
 .meiti-wrapper .btn{
+	display: block;
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
@@ -1380,7 +1400,8 @@ position: absolute;
 	width: 80%;
 	margin: 0 auto;
 	-webkit-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	        -ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
 	background-color: #fff;
 	border-radius: 5px;
 	padding: 20px;

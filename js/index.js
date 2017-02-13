@@ -13,7 +13,7 @@ $(function() {
 	var dWidth = $("body ").width();
 	if(dWidth <= 768) {
 		var banxingSwiper = new Swiper('#banxingSwiper', {
-			slidesPerView: 2,
+			slidesPerView: 1,
 			spaceBetween: 20,
 			// 如果需要前进后退按钮
 			nextButton: '.swiper-button-next',
@@ -35,7 +35,7 @@ $(function() {
 		})
 	} else {
 		var banxingSwiper = new Swiper('#banxingSwiper', {
-			slidesPerView: 6,
+			slidesPerView: 4,
 			spaceBetween: 20,
 			// 如果需要前进后退按钮
 			nextButton: '.swiper-button-next',
@@ -70,7 +70,7 @@ $(function() {
 		$(this).removeClass("active");
 	});
 	//班型介绍hover事件
-	$("#banxingSwiper .item").hover(function() {
+	$("#banxingSwiper .swiper-slide").hover(function() {
 		$(this).addClass("active");
 	}, function() {
 		$(this).removeClass("active");

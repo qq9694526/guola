@@ -113,7 +113,8 @@ body {
 	width: 300px;
 	margin: 0 auto;
 	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
 	background-color: rgba(255, 255, 255, .7);
 	border-radius: 10px;
 	text-align: center;
@@ -244,14 +245,14 @@ body {
 }
 
 .promise-wrapper {
-	width: 55%;
+	width: 65%;
 	margin: 40px auto;
 }
 
 .promise-wrapper .row {
 	border-radius: 5px;
-	padding: 15px 0;
-	width: 80%;
+	padding: 25px 0;
+	width: 85%;
 	margin: 0 auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -262,15 +263,19 @@ body {
 
 .promise-wrapper .left {
 	-webkit-box-flex: 0;
-	-ms-flex: 0 0 44px;
-	flex: 0 0 44px;
+	-ms-flex: 0 0 60px;
+	flex: 0 0 60px;
 	/*text-align: center;*/
 }
 
-.promise-wrapper .left img {}
+.promise-wrapper .left img {
+	width: 100%;
+	height: 100%;
+}
 
 .promise-wrapper .right {
-	line-height: 23px;
+	font-size: 22px;
+	line-height: 60px;
 }
 
 
@@ -509,12 +514,16 @@ body {
 	padding-bottom: 40px;
 	width: 1200px;
 }
+.banxing-wrapper .swiper-slide.active .item{
+	display: block;
+}
+.banxing-wrapper .swiper-slide.active .face{
+	display: none;
+}
 
 .banxing-wrapper .item {
+	display: none;
 	font-size: 12px;
-	/*background-color: #FDFBF3;*/
-	border-bottom-right-radius: 30px;
-	border-top-left-radius: 30px;
 	text-align: center;
 	margin: 0 15px;
 	width: 170px;
@@ -523,11 +532,26 @@ body {
 	cursor: pointer;
 	-webkit-transition: all .3s;
 	transition: all .3s;
+	color: #fff;
 }
-
-.banxing-wrapper .item.active {
-	/*background-color: #F4AF30;*/
-	/*color: #fff;*/
+.banxing-wrapper .face{
+	font-size: 12px;
+	text-align: center;
+	margin: 0 15px;
+	width: 170px;
+	height: 252px;
+	cursor: pointer;
+	border-left: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+}
+.banxing-wrapper .face .title{
+	font-size: 18px;
+	font-weight: 600;
+	padding: 20px 0;
+}
+.banxing-wrapper .face .img{
+	width: 150px;
 }
 
 .banxing-wrapper .item li {
@@ -543,59 +567,52 @@ body {
 	background-size: 100% 100%;
 }
 
-.banxing-wrapper .putong {
-	background-image: url(../img/banxing/putong01.png);
+.banxing-wrapper .putong .item{
+	background-color: #F3B950;
+}
+.banxing-wrapper .putong .img-wrapper{
+	background-image: url(../img/banxing/putong_xz.png);
+}
+.banxing-wrapper .putong .line{
+	background-color: #F3B950;
+	height: 4px;
 }
 
-.banxing-wrapper .active .putong {
-	background-image: url(../img/banxing/putong.png);
+.banxing-wrapper .vip .item{
+	background-color: #25A856;
+}
+.banxing-wrapper .vip .img-wrapper{
+	background-image: url(../img/banxing/vip_xz.png);
+}
+.banxing-wrapper .vip .line{
+	background-color: #25A856;
+	height: 4px;
 }
 
-.banxing-wrapper .vip {
-	background-image: url(../img/banxing/vip01.png);
+.banxing-wrapper .yeban .item{
+	background-color: #45BBFC;
 }
-
-.banxing-wrapper .active .vip {
-	background-image: url(../img/banxing/vip.png);
+.banxing-wrapper .yeban .img-wrapper{
+	background-image: url(../img/banxing/yeban_xz.png);
 }
-
-.banxing-wrapper .yeban {
-	background-image: url(../img/banxing/yeban01.png);
+.banxing-wrapper .yeban .line{
+	background-color: #45BBFC;
+	height: 4px;
 }
-
-.banxing-wrapper .active .yeban {
-	background-image: url(../img/banxing/yeban.png);
+.banxing-wrapper .zidongdang .item{
+	background-color: #F77479;
 }
-
-.banxing-wrapper .zidongdang {
-	background-image: url(../img/banxing/zidongdang01.png);
+.banxing-wrapper .zidongdang .img-wrapper{
+	background-image: url(../img/banxing/zidongdang_xz.png);
 }
-
-.banxing-wrapper .active .zidongdang {
-	background-image: url(../img/banxing/zidongdang.png);
+.banxing-wrapper .zidongdang .line{
+	background-color: #F77479;
+	height: 5px;
 }
-
-.banxing-wrapper .guibin {
-	background-image: url(../img/banxing/guibin01.png);
-}
-
-.banxing-wrapper .active .guibin {
-	background-image: url(../img/banxing/guibin.png);
-}
-
-.banxing-wrapper .baoma {
-	background-image: url(../img/banxing/baoma01.png);
-}
-
-.banxing-wrapper .active .baoma {
-	background-image: url(../img/banxing/baoma.png);
-}
-
 .banxing-wrapper .img-wrapper img {
 	width: 80px;
 	height: 80px;
 }
-
 .banxing-wrapper .item .title {
 	font-size: 14px;
 	font-weight: 600;
@@ -973,7 +990,8 @@ body {
 	margin: 0 auto;
 	opacity: 0;
 	-webkit-transform: scale(.2);
-	transform: scale(.2);
+	-ms-transform: scale(.2);
+	    transform: scale(.2);
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
@@ -981,7 +999,8 @@ body {
 .code-wrapper .item.active .codeimg {
 	opacity: 1;
 	-webkit-transform: scale(1);
-	transform: scale(1);
+	-ms-transform: scale(1);
+	    transform: scale(1);
 	bottom: 65px;
 }
 
@@ -1077,7 +1096,8 @@ body {
 	width: 350px;
 	margin: 0 auto;
 	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
 	background-color: #fff;
 	border-radius: 5px;
 	text-align: center;
@@ -1147,13 +1167,19 @@ body {
 /*团购——团购活动*/
 
 .activity-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-bottom: 40px;
 }
 
 .activity-wrapper .img-wrapper {
-	flex: 0 0 400px;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 400px;
+	        flex: 0 0 400px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -1164,7 +1190,9 @@ body {
 }
 
 .activity-wrapper .content {
-	flex: 0 0 30%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 30%;
+	        flex: 0 0 30%;
 	line-height: 2;
 	font-size: 14px;
 	display: -webkit-box;
@@ -1358,7 +1386,8 @@ body {
 	left: 0;
 	text-align: center;
 	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
 }
 
 .nav-banner .item {
@@ -1585,6 +1614,7 @@ body {
 }
 
 .meiti-wrapper .btn {
+	display: block;
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
@@ -1620,7 +1650,8 @@ body {
 	width: 350px;
 	margin: 0 auto;
 	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	    transform: translateY(-50%);
 	background-color: #fff;
 	border-radius: 5px;
 	padding: 30px;
