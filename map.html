@@ -284,6 +284,8 @@
 				<li class="item" data-area="管城区">管城区</li>
 				<li class="item" data-area="经开区">经开区</li>
 				<li class="item" data-area="中牟县">中牟县</li>
+				<li class="item" data-area="登封市">登封市</li>
+				<li class="item" data-area="考务中心">考务中心</li>
 			</ul>
 		</div>
 		<!--右侧悬浮-->
@@ -370,7 +372,19 @@
 					<li class="item" data-id="11"><span class="icon-bus"></span>交通技校驾校中牟人民路校区</li>
 				</ul>
 			</section>
-
+			<section class="section">
+				<div class="title" data-area="登封市">登封市驾校<span class="icon-jiantou"></span></div>
+				<ul class="list">
+					<li class="item" data-id="22"><span class="icon-bus"></span>万通驾校</li>
+				</ul>
+			</section>
+			<section class="section">
+				<div class="title" data-area="考务中心">考务中心<span class="icon-jiantou"></span></div>
+				<ul class="list">
+					<li class="item" data-id="23"><span class="icon-bus"></span>天意驾培考务中心</li>
+					<li class="item" data-id="24"><span class="icon-bus"></span>交通技校驾校考场/玉马考务中心</li>
+				</ul>
+			</section>
 		</div>
 		<!--我要报名dailog-->
 		<div id="baoming-dailog" class="baoming-dailog">
@@ -393,6 +407,7 @@
 							<option value="管城区">管城区</option>
 							<option value="经开区">经开区</option>
 							<option value="中牟县">中牟县</option>
+							<option value="登封市">登封市</option>
 						</select>
 						<div class="icon-xiala"></div>
 					</li>
@@ -503,7 +518,9 @@
 		"中原区": [113.619794, 34.754266],
 		"经开区": [113.645201, 34.681971],
 		"管城区": [113.683917, 34.759677],
-		"中牟县": [113.982724, 34.725145]
+		"中牟县": [113.982724, 34.725145],
+		"登封市": [113.057279, 34.460013],
+		"考务中心": [113.690666, 34.605199]
 	};
 	//创建地图实例
 	map = new BMap.Map("allmap", {
@@ -522,6 +539,7 @@
 			zoom = 13;
 			$("#selecter").find(".name").text(district);
 		}
+		
 		goArea(district, zoom);
 		$(".title").each(function(i, n) {
 			var area = $(n).attr("data-area");
@@ -555,7 +573,10 @@
 		[113.583894, 34.775387, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>交通技校驾校（郑上路校区）</h3><p><b>地址：</b>郑州市建设西路与湖西路交叉口向北后仓村（佛光寺对面）</p><p><b>电话：</b>0371-66666128</p>"],
 		[113.612026, 34.720915, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾校（西三环校区）</h3><p><b>地址：</b>郑州市西三环长江路向北300米路西</p><p><b>电话：</b>0371-66666128</p>"],
 		[113.661908, 34.746863, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾校（京广北校区）</h3><p><b>地址：</b>郑州市京广路与陇海路交叉口向北300米路东</p><p><b>电话：</b>0371-66666128</p>"],
-		[113.653271, 34.715996, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾校（总校）</h3><p><b>地址：</b>郑州市二七区大学路与长江路向东100米路南</p><p><b>电话：</b>0371-66666128</p>"]
+		[113.653271, 34.715996, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾校（总校）</h3><p><b>地址：</b>郑州市二七区大学路与长江路向东100米路南</p><p><b>电话：</b>0371-66666128</p>"],
+		[113.071432, 34.445318, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>万通驾校</h3><p><b>地址：</b>登封市客运总站南600米（中大建材东隔壁）</p><p><b>电话：</b>0371-66666128</p>"],
+		[113.690666, 34.605199, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾培考务中心</h3><p><b>地址：</b>郑州市龙湖镇中原工学院107国道向南1公里路东昱辰考训基地</p><p><b>电话：</b>0371-66666128</p>"],
+		[114.067131, 34.844338, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>交通技校驾校考场/玉马考务中心</h3><p><b>地址：</b>郑州市郑开大道雁鸣湖站下车，沿景观大道向北过连霍高速向前2公里路南</p><p><b>电话：</b>0371-66666128</p>"]
 	];
 	var icon = new BMap.Icon("img/map/tb.png", new BMap.Size(32, 40), {
 		imageSize: new BMap.Size(32, 40)
@@ -600,10 +621,11 @@
 			goArea(qu, 13);
 			$("#selecter").removeClass("open").find(".name").text(qu);
 		})
-		//PC端选择区域
+	//PC端选择区域
 	$("#control-wrapper").on("click", ".title", function() {
-		var qu = $(this).attr("data-area");
-		goArea(qu, 14);
+		var qu = $(this).attr("data-area"),
+			zoom=14;
+		goArea(qu, zoom);
 	})
 
 	function addClickHandler(content, marker) {

@@ -36,7 +36,7 @@ $(function() {
 	} else {
 		var banxingSwiper = new Swiper('#banxingSwiper', {
 			slidesPerView: 4,
-			spaceBetween: 20,
+			spaceBetween: 80,
 			// 如果需要前进后退按钮
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev'

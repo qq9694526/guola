@@ -387,6 +387,13 @@ section{
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
 }
+.circle-wrapper.circle-jituan .circle{
+	font-size: 14px;
+	border-radius: 17px;
+	padding: 10px 10px;
+	width: auto;
+	height: auto;
+}
 .circle-wrapper.circle-quyu .circle{
 	padding-top: 16px;
     margin-right: 5px;
@@ -457,6 +464,7 @@ section{
 .banxing-wrapper .item li {
 	margin-bottom: 10px;
 	line-height: 1;
+	font-size: 14px;
 }
 
 .banxing-wrapper .item .img-wrapper {
@@ -514,7 +522,7 @@ section{
 	height: 80px;
 }
 .banxing-wrapper .item .title {
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 600;
 	margin-bottom: 10px;
 }
