@@ -1239,7 +1239,7 @@ a:visited {
 	display: flex;
 }
 
-.content .item .label {
+.activity-wrapper .content .item .label {
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 75px;
 	flex: 0 0 75px;
@@ -1247,7 +1247,7 @@ a:visited {
 	margin-right: 10px;
 }
 
-.content .item .color-red {
+.activity-wrapper .content .item .color-red {
 	color: red;
 }
 
