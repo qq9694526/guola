@@ -7,6 +7,11 @@
 		<meta name="Description" content="过啦学车，更有保障的学车平台。直营驾校覆盖全城，专注驾培行业30年。自建考场通过率高，1100名教练专业指导；收费透明，一费到底，7天无理由退款，不满意随时更换驾校/教练。" />
 		<meta name="keywords" content="" />
 		<link rel="icon" href="img/logo.ico" type="image/x-icon">
+		<script type="text/javascript">
+			if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE6.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE7.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE8.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE9.0") {
+				location.href = "changeIE.html";
+			}
+		</script>
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
@@ -539,7 +544,7 @@
 			zoom = 13;
 			$("#selecter").find(".name").text(district);
 		}
-		
+
 		goArea(district, zoom);
 		$(".title").each(function(i, n) {
 			var area = $(n).attr("data-area");
@@ -617,14 +622,14 @@
 	});
 	//移动端选择区域
 	$("#selecter").on("click", ".item", function() {
-			var qu = $(this).attr("data-area");
-			goArea(qu, 13);
-			$("#selecter").removeClass("open").find(".name").text(qu);
-		})
+		var qu = $(this).attr("data-area");
+		goArea(qu, 13);
+		$("#selecter").removeClass("open").find(".name").text(qu);
+	})
 	//PC端选择区域
 	$("#control-wrapper").on("click", ".title", function() {
 		var qu = $(this).attr("data-area"),
-			zoom=14;
+			zoom = 14;
 		goArea(qu, zoom);
 	})
 

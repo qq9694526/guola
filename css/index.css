@@ -143,7 +143,7 @@ body {
 	background-size: 100% 100%;
 }
 
-.baoming-banner input,.baoming-banner select,.baoming-banner option {
+.baoming-banner input,.baoming-banner select,.baoming-banner option,.activity-baoming input,.activity-baoming select,.activity-baoming option {
 	border: 1px solid #d9d9d9;
 	width: 90%;
 	background-color: rgba(255, 255, 255, .5);

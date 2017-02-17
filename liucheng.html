@@ -8,6 +8,11 @@
 		<meta name="keywords" content="在线留言" />
 		<title>学车流程-过啦学车</title>
 		<link rel="icon" href="img/logo.ico" type="image/x-icon">
+		<script type="text/javascript">
+			if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE6.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE7.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE8.0" || navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.split(";")[1].replace(/[ ]/g, "") == "MSIE9.0") {
+				location.href = "changeIE.html";
+			}
+		</script>
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
@@ -449,11 +454,11 @@
 			$(function() {
 				var $saomaHover = $('#saoma .hover-wrapper');
 				$('#saoma').hover(function() {
-						$saomaHover.addClass("active");
-					}, function() {
-						$saomaHover.removeClass("active");
-					})
-					//	我要报名
+					$saomaHover.addClass("active");
+				}, function() {
+					$saomaHover.removeClass("active");
+				})
+				//	我要报名
 				$(".baoming-btn-hook").on("click", function() {
 					$("#baoming-dailog").show();
 				})
