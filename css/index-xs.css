@@ -157,8 +157,26 @@ section {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
-
+.youshi-wrapper>.item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 30%;
+	        flex: 0 0 30%;
+	margin: 0 5px;
+}
+.youshi-wrapper li {
+	font-size: 14px;
+	margin-bottom: 10px;
+	line-height: 1;
+}
 .youshi-wrapper li {
 	font-size: 12px;
 	margin-bottom: 10px;

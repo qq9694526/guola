@@ -72,12 +72,12 @@ body {
 }
 
 .swiper-button-prev {
-	left: 60px;
+	left: 75px;
 	background-image: url(../img/l_btn.png);
 }
 
 .swiper-button-next {
-	right: 60px;
+	right: 75px;
 	background-image: url(../img/r_btn.png);
 }
 
@@ -201,8 +201,17 @@ body {
 	width: 60%;
 	margin: 0 auto;
 	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
 }
-
+.youshi-wrapper>.item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 20%;
+	        flex: 0 0 20%;
+}
 .youshi-wrapper li {
 	font-size: 14px;
 	margin-bottom: 10px;
@@ -1048,10 +1057,12 @@ body {
 
 
 /*右侧悬浮窗*/
-
+.fixed-right-wrapper a,.fixed-right-wrapper a:focus,.fixed-right-wrapper a:hover,.fixed-right-wrapper a:visited{
+	color: #fff;
+}
 .fixed-right-wrapper {
 	position: fixed;
-	top: 120px;
+	top: 180px;
 	right: 0;
 	z-index: 50;
 }
@@ -1059,61 +1070,100 @@ body {
 .fixed-right-wrapper .content {}
 
 .fixed-right-wrapper .content .item {
-	width: 50px;
-	height: 50px;
-	margin-bottom: 2px;
+	width: 70px;
+	height: 70px;
 	background-size: 100% 100%;
 	position: relative;
 	cursor: pointer;
 }
-
-.content .item.zixun {
-	background-image: url(../img/fixed-right/ziuxun.png);
+.fixed-right-wrapper .content .item .img-wrapper{
+	padding: 15px;
+}
+.fixed-right-wrapper .content .item .img-wrapper>img{
+	display: block;
+	width: 100%;
+}
+.content .item.baoming {
+	background-color: rgba(255,77,77,.5);
+}
+.content .item.baoming.hover {
+	background-color: rgba(255,77,77,1);
+}
+.content .item.zixunqq,.content .item.zixunqq .hover-wrapper {
+	background-color: rgba(52,153,221,.5);
+}
+.content .item.zixunqq.hover,.content .item.zixunqq.hover .hover-wrapper{
+	background-color: rgba(52,153,221,1);
+}
+.content .item.weixin,.content .item.weixin .hover-wrapper {
+	background-color: rgba(60,176,51,.5);
 }
 
-.content .item.weixin {
-	background-image: url(../img/fixed-right/weixin.png);
+.content .item.weixin.hover,.content .item.weixin.hover .hover-wrapper {
+	background-color: rgba(60,176,51,1);
 }
 
-.content .item.weixin.hover {
-	background-image: url(../img/fixed-right/weixin02.png);
+.content .item.phone,.content .item.phone .hover-wrapper {
+	background-color: rgba(236,165,17,.5);
 }
 
-.content .item.phone {
-	background-image: url(../img/fixed-right/photo.png);
-}
-
-.content .item.phone.hover {
-	background-image: url(../img/fixed-right/photo02.png);
+.content .item.phone.hover,.content .item.phone.hover .hover-wrapper {
+	background-color: rgba(236,165,17,1);
 }
 
 .content .item.gotop {
-	background-image: url(../img/fixed-right/top.png);
+	background-color: rgba(128,128,128,.5);
+}
+.content .item.gotop.hover {
+	background-color: rgba(128,128,128,1);
 }
 
-.content .item.baoming {
-	background-image: url(../img/fixed-right/baoming.png);
-}
 
 .fixed-right-wrapper .hover-wrapper {
-	display: none;
 	position: relative;
-	width: 140px;
-	top: 0;
-	right: 140px;
-	padding: 15px;
-	border-radius: 5px;
-	background-color: #fff;
-	line-height: 1.8;
+	width: 220px;
+	top: -70px;
+	right: -70px;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
-
-.fixed-right-wrapper .hover-wrapper img {
+.fixed-right-wrapper .hover-wrapper>img{
 	width: 100%;
 }
+.fixed-right-wrapper .weixin .hover-wrapper{
+	width: 150px;
+	height: 150px;
+}
 
-.content .item.weixin.hover .hover-wrapper,
-.content .item.phone.hover .hover-wrapper {
+.fixed-right-wrapper .hover-wrapper .icon-qq{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/fixed-right/zixun.png);
+	background-size: 100% 100%;
+	vertical-align: sub;
+}
+.fixed-right-wrapper .content .item.hover .hover-wrapper{
+	right: 220px;
+}
+.fixed-right-wrapper .content .item.weixin.hover .hover-wrapper{
+	right: 150px;
+}
+.fixed-right-wrapper .hover-wrapper>p{
+	line-height: 70px;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+.fixed-right-wrapper .phone .hover-wrapper>p{
+	font-size: 24px;
+}
+.fixed-right-wrapper .shangqiao{
 	display: block;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
 }
 
 

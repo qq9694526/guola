@@ -29,16 +29,7 @@
 				width: 100%;
 			}
 			
-			.mask-banben {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				z-index: 1000;
-				background-color: #F4F4F4;
-			}
-			#bannerSwiper .swiper-slide>a{
+			#bannerSwiper .swiper-slide>a {
 				display: block;
 			}
 		</style>
@@ -180,7 +171,15 @@
 					<div class="line"></div>
 				</header>
 				<div id="youshi-wrapper" class="row youshi-wrapper">
-					<ul class="col-sm-3 col-xs-6">
+					<ul class="item">
+						<li class="img-wrapper"><img src="img/youshi/kaochang.png" alt="" />
+							<img class="back" src="img/youshi/kaochang01.png" alt="" />
+						</li>
+						<li class="small-text">没考场？不好过？</li>
+						<li>标准化直属考场</li>
+						<li>高通过率有保障</li>
+					</ul>
+					<ul class="item">
 						<li class="img-wrapper"><img src="img/youshi/zhengjian.png" alt="" />
 							<img class="back" src="img/youshi/zhengjian01.png" alt="" />
 						</li>
@@ -188,7 +187,7 @@
 						<li>45天极速拿证</li>
 						<li>更短记录等你挑战</li>
 					</ul>
-					<ul class="col-sm-3 col-xs-6">
+					<ul class="item">
 						<li class="img-wrapper"><img src="img/youshi/shoufei.png" alt="" />
 							<img class="back" src="img/youshi/shoufei01.png" alt="" />
 						</li>
@@ -196,7 +195,7 @@
 						<li>全程透明</li>
 						<li>向隐形消费说NO</li>
 					</ul>
-					<ul class="col-sm-3 col-xs-6">
+					<ul class="item">
 						<li class="img-wrapper"><img src="img/youshi/jiaolian.png" alt="" />
 							<img class="back" src="img/youshi/jiaolian01.png" alt="" />
 						</li>
@@ -204,7 +203,7 @@
 						<li>专业教练 文明教学</li>
 						<li>杜绝吃拿卡要</li>
 					</ul>
-					<ul class="col-sm-3 col-xs-6">
+					<ul class="item">
 						<li class="img-wrapper"><img src="img/youshi/tuikuan.png" alt="" />
 							<img class="back" src="img/youshi/tuikuan01.png" alt="" />
 						</li>
@@ -726,24 +725,53 @@
 		<!--右侧悬浮-->
 		<aside class="fixed-right-wrapper hidden-xs">
 			<ul id="fixed-right" class="content">
-				<li class="item baoming baoming-btn-hook"></li>
-				<li class="item zixun udesk-hook-right">
-					<a style="display: block;width: 100%;height: 100%;" data-href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790"></a>
+				<li class="item baoming baoming-btn-hook">
+					<div class="img-wrapper">
+						<img src="img/fixed-right/baoming.png" />
+					</div>
+				</li>
+				<li class="item zixunqq">
+					<div class="img-wrapper">
+						<img src="img/fixed-right/zixun.png" />
+					</div>
+					<div class="hover-wrapper">
+						<p>
+							<a href="tencent://message/?uin=3258959983&Site=&Menu=yes">
+								<span class="icon-qq"></span>学车顾问--过过
+							</a>
+						</p>
+						<p>
+							<a href="tencent://message/?uin=1424943851&Site=&Menu=yes">
+								<span class="icon-qq"></span>学车顾问--啦啦
+							</a>
+						</p>
+					</div>
 				</li>
 				<li class="item weixin">
+					<div class="img-wrapper">
+						<img src="img/fixed-right/weixin.png" />
+					</div>
 					<div class="hover-wrapper">
-						<h3 style="text-align: center;"><b>微信扫码关注</b></h3>
-						<img src="img/bottom/weixinhao.jpg" />
+						<img src="img/fixed-right/fuwuhao.jpg" />
 					</div>
 				</li>
 				<li class="item phone">
+					<div class="img-wrapper">
+						<img src="img/fixed-right/photo.png" />
+					</div>
 					<div class="hover-wrapper">
-						<h3><b>咨询电话:</b></h3>
 						<p>0371-66666128</p>
 					</div>
 				</li>
-				<li class="item gotop"></li>
+				<li class="item gotop">
+					<div class="img-wrapper">
+						<img src="img/fixed-right/dingbu.png" />
+					</div>
+				</li>
 			</ul>
+			<a class="shangqiao" data-href="1">
+				<img src="img/fixed-right/zaixian.jpg" width="150px" height="70px"/>
+			</a>
 		</aside>
 		<!--我要报名dailog-->
 		<div id="baoming-dailog" class="baoming-dailog">
