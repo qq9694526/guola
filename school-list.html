@@ -79,10 +79,158 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
+		<style type="text/css">
+			.school-wrapper{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			.selector{
+				font-size: 0;
+				line-height: 1;
+				margin: 35px 0;
+			}
+			.selector .label{
+				font-size: 16px;
+				margin-right: 10px;
+			}
+			.selector .item{
+				font-size: 16px;
+				margin-right: 30px;
+				cursor: pointer;
+			}
+			.selector .item.active{
+				color: #F4AF30;
+			}
+		</style>
 		<ariticle class="ariticle">
-			
 			<section class="school-wrapper">
-								
+					<div class="selector">
+						<span class="label">驾校类型：</span>
+						<span class="item active">不限</span>
+						<span class="item">C1小车手动档</span>
+						<span class="item">C2小车自动档</span>
+					</div>
+					<div class="selector">
+						<span class="label">练车区域：</span>
+						<span class="item active">不限</span>
+						<span class="item">中原区</span>
+						<span class="item">二七区</span>
+						<span class="item">管城区</span>
+						<span class="item">金水区</span>
+						<span class="item">惠济区</span>
+						<span class="item">经开区</span>
+						<span class="item">中牟县</span>
+						<span class="item">登封市</span>
+					</div>
+					<style type="text/css">
+						.selector-menu{
+							display: inline-block;
+							margin-bottom: 20px;
+							font-size: 0;
+						}
+						.selector-menu .item{
+							font-size: 16px;
+							display: inline-block;
+							height: 40px;
+							line-height: 40px;
+							background-color: #fff;
+							padding: 0 30px;
+							border-top: 1px solid #E6E6E6;
+							border-right: 1px solid #E6E6E6;
+							border-bottom: 1px solid #E6E6E6;
+							cursor: pointer;
+						}
+						.selector-menu .item:first-child{
+							border-left: 1px solid #E6E6E6;
+						}
+						.selector-menu .item.active{
+							color: #fff;
+							background-color: #F4AF30;
+							border: 1px solid #F4AF30;
+						}
+					</style>
+					<ul class="selector-menu">
+						<li class="item active">推荐</li>
+						<li class="item">练车近</li>
+						<li class="item">学费低</li>
+						<li class="item">评价好</li>
+					</ul>
+					<style type="text/css">
+						.school-list>.item{
+							margin-bottom: 20px;
+						}
+						.school-list .baseinfo{
+							display: inline-block;
+							width: 360px;
+							padding: 30px;
+							background-color: #FEF6E1;
+						}
+						.school-list .baseinfo>li{
+							display: inline-block;
+							width: 300px;
+							text-align: center;
+							margin-bottom: 10px;
+							font-size: 0;
+							line-height: 1;
+							white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+						}
+						.school-list .baseinfo>li:last-child{
+							margin-bottom: 0;
+						}
+						.school-list .baseinfo .headimg img{
+							display: block;
+							width: 120px;
+							height: 120px;
+							border-radius: 50%;
+							margin: 0 auto;
+						}
+						.school-list .baseinfo .name{
+							font-size: 20px;
+						}
+						.school-list .baseinfo .star{
+							display: inline-block;
+							width: 100px;
+							height: 16px;
+							background-image: url(img/school/star.png);
+						}
+						.school-list .baseinfo .star.star-5{
+							background-position: 0px;
+						}
+						.school-list .baseinfo .star.star-4{
+							background-position: -20px;
+						}
+						.school-list .baseinfo .star.star-3{
+							background-position: -40px;
+						}
+						.school-list .baseinfo .star.star-2{
+							background-position: -60px;
+						}
+						.school-list .baseinfo .star.star-1{
+							background-position: -80px;
+						}
+						.school-list .baseinfo .star.star-0{
+							background-position: -96px;
+						}
+						.school-list .baseinfo .text{
+							font-size: 14px;
+							color: #888;
+						}
+					</style>
+					<div id="schoolList" class="school-list">
+						<div class="item">
+							<ul class="baseinfo">
+								<li class="headimg"><img src="img/about/banner_xs.jpg"/></li>
+								<li class="name">交通技校老鸭陈校区</li>
+								<li><span class="star star-4"></span></li>
+								<li class="text">567人已报名</li>
+								<li class="text">最近训练场  4.0km 金水区</li>
+								<li class="text"><span class="icon-weizhi"></span>
+									郑州市长江路与江山路交叉口东200米路南大司空倒萨空间
+								</li>
+							</ul>
+							<div class="classes"></div>
+						</div>
+					</div>
 			</section>
 			<!--bottomMenu-->
 			<section class="visible-xs bg-grey">
@@ -168,14 +316,9 @@
 				</li>
 				<li class="item zixunqq">
 					<div class="img-wrapper">
-						<img src="img/fixed-right/zixun.png" />
-					</div>
-					<div class="hover-wrapper">
-						<p>
-							<a href="tencent://message/?uin=3258959983&Site=&Menu=yes">
-								<span class="icon-qq"></span>学车顾问--过过
-							</a>
-						</p>
+						<a data-href="1">
+							<img src="img/fixed-right/zixun.png" />
+						</a>
 					</div>
 				</li>
 				<li class="item weixin">
@@ -200,9 +343,6 @@
 					</div>
 				</li>
 			</ul>
-			<a class="shangqiao" data-href="1">
-				<img src="img/fixed-right/zaixian.jpg" width="150px" height="70px"/>
-			</a>
 		</aside>
 		<!--我要报名dailog-->
 		<div id="baoming-dailog" class="baoming-dailog">
