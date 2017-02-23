@@ -356,7 +356,24 @@ section {
 	bottom: 8.56%;
 	opacity: 1;
 }
+.fenbu-warpper .bubble.bubble-xinzheng {
+	left: 68.17%;
+	bottom: 0%;
+}
 
+.fenbu-warpper .bubble.bubble-xinzheng.active {
+	bottom: 1.56%;
+	opacity: 1;
+}
+.fenbu-warpper .bubble.bubble-gaoxin {
+	left: 0.17%;
+	bottom: 0%;
+}
+
+.fenbu-warpper .bubble.bubble-gaoxin.active {
+	bottom: 55.56%;
+	opacity: 1;
+}
 .fenbu-warpper .bubble.bubble-zijian1 {
 	left: 88.79%;
 	bottom: 0%;
@@ -487,16 +504,19 @@ a:visited {
 }
 
 .circle-wrapper.circle-jituan .circle {
+	display: inline-block;
 	font-size: 14px;
 	border-radius: 17px;
 	padding: 10px 10px;
-	width: auto;
+	width: 132px;
 	height: auto;
+	text-align: center;
 }
 
 .circle-wrapper.circle-quyu .circle {
 	padding-top: 16px;
 	margin-right: 5px;
+	margin-bottom: 5px;
 	width: 50px;
 	height: 50px;
 }

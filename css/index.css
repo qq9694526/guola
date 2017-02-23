@@ -539,11 +539,13 @@ body {
 	text-decoration: none;
 }
 .circle-wrapper.circle-jituan .circle{
-    font-size: 14px;
-    border-radius: 22px;
-    padding: 15px 30px;
-    width: auto;
+	display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 20px 0;
+    width: 175px;
     height: auto;
+    text-align: center;
 }
 
 .circle-wrapper .circle.active {
