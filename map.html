@@ -285,10 +285,12 @@
 				<li class="item" data-area="金水区">金水区</li>
 				<li class="item" data-area="二七区">二七区</li>
 				<li class="item" data-area="中原区">中原区</li>
+				<li class="item" data-area="高新区">高新区</li>
 				<li class="item" data-area="惠济区">惠济区</li>
 				<li class="item" data-area="管城区">管城区</li>
 				<li class="item" data-area="经开区">经开区</li>
 				<li class="item" data-area="中牟县">中牟县</li>
+				<li class="item" data-area="新郑市">新郑市</li>
 				<li class="item" data-area="登封市">登封市</li>
 				<li class="item" data-area="考务中心">考务中心</li>
 			</ul>
@@ -367,8 +369,13 @@
 				<div class="title" data-area="中原区">中原区驾校<span class="icon-jiantou"></span></div>
 				<ul class="list">
 					<li class="item" data-id="5"><span class="icon-bus"></span>交通技校驾校西站校区</li>
-					<li class="item" data-id="12"><span class="icon-bus"></span>银丰驾校工大校区</li>
 					<li class="item" data-id="18"><span class="icon-bus"></span>交通技校驾校郑上路校区</li>
+				</ul>
+			</section>
+			<section class="section">
+				<div class="title" data-area="高新区">高新区驾校<span class="icon-jiantou"></span></div>
+				<ul class="list">
+					<li class="item" data-id="12"><span class="icon-bus"></span>银丰驾校工大校区</li>
 				</ul>
 			</section>
 			<section class="section">
@@ -394,6 +401,12 @@
 				</ul>
 			</section>
 			<section class="section">
+				<div class="title" data-area="新郑市">新郑市驾校<span class="icon-jiantou"></span></div>
+				<ul class="list">
+					<li class="item" data-id="25"><span class="icon-bus"></span>天意驾培考务中心（昱辰驾校）</li>
+				</ul>
+			</section>
+			<section class="section">
 				<div class="title" data-area="登封市">登封市驾校<span class="icon-jiantou"></span></div>
 				<ul class="list">
 					<li class="item" data-id="22"><span class="icon-bus"></span>万通驾校</li>
@@ -402,7 +415,7 @@
 			<section class="section">
 				<div class="title" data-area="考务中心">考务中心<span class="icon-jiantou"></span></div>
 				<ul class="list">
-					<li class="item" data-id="23"><span class="icon-bus"></span>天意驾培考务中心</li>
+					<li class="item" data-id="23"><span class="icon-bus"></span>天意驾培考务中心（昱辰驾校）</li>
 					<li class="item" data-id="24"><span class="icon-bus"></span>交通技校驾校考场/玉马考务中心</li>
 				</ul>
 			</section>
@@ -424,10 +437,12 @@
 							<option value="金水区">金水区</option>
 							<option value="二七区">二七区</option>
 							<option value="中原区">中原区</option>
+							<option value="高新区">高新区</option>
 							<option value="惠济区">惠济区</option>
 							<option value="管城区">管城区</option>
 							<option value="经开区">经开区</option>
 							<option value="中牟县">中牟县</option>
+							<option value="新郑市">新郑市</option>
 							<option value="登封市">登封市</option>
 						</select>
 						<div class="icon-xiala"></div>
@@ -537,11 +552,13 @@
 		"惠济区": [113.623396, 34.873509],
 		"二七区": [113.64651, 34.731025],
 		"中原区": [113.619794, 34.754266],
+		"高新区": [113.564338, 34.841451],
 		"经开区": [113.645201, 34.681971],
 		"管城区": [113.683917, 34.759677],
 		"中牟县": [113.982724, 34.725145],
+		"新郑市": [113.690628,34.605196],
 		"登封市": [113.057279, 34.460013],
-		"考务中心": [113.690666, 34.605199]
+		"考务中心": [114.067131, 34.844338]
 	};
 	//创建地图实例
 	map = new BMap.Map("allmap", {
@@ -596,8 +613,9 @@
 		[113.661908, 34.746863, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾校（京广北校区）</h3><p><b>地址：</b>郑州市京广路与陇海路交叉口向北300米路东</p><p><b>电话：</b>0371-66666128</p>"],
 		[113.653271, 34.715996, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾校（总校）</h3><p><b>地址：</b>郑州市二七区大学路与长江路向东100米路南</p><p><b>电话：</b>0371-66666128</p>"],
 		[113.071432, 34.445318, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>万通驾校</h3><p><b>地址：</b>登封市客运总站南600米（中大建材东隔壁）</p><p><b>电话：</b>0371-66666128</p>"],
-		[113.690666, 34.605199, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾培考务中心</h3><p><b>地址：</b>郑州市龙湖镇中原工学院107国道向南1公里路东昱辰考训基地</p><p><b>电话：</b>0371-66666128</p>"],
-		[114.067131, 34.844338, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>交通技校驾校考场/玉马考务中心</h3><p><b>地址：</b>郑州市郑开大道雁鸣湖站下车，沿景观大道向北过连霍高速向前2公里路南</p><p><b>电话：</b>0371-66666128</p>"]
+		[113.690666, 34.605199, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾培考务中心（昱辰驾校）</h3><p><b>地址：</b>郑州市龙湖镇中原工学院107国道向南1公里路东昱辰考训基地</p><p><b>电话：</b>0371-66666128</p>"],
+		[114.067131, 34.844338, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>交通技校驾校考场/玉马考务中心</h3><p><b>地址：</b>郑州市郑开大道雁鸣湖站下车，沿景观大道向北过连霍高速向前2公里路南</p><p><b>电话：</b>0371-66666128</p>"],
+		[113.690597,34.605412, "<h3 style='color:#EB1515;border-bottom:1px solid #e6e6e6;padding-bottom:10px;font-size:16px;'>天意驾培考务中心（昱辰驾校）</h3><p><b>地址：</b>郑州市龙湖镇中原工学院107国道向南1公里路东昱辰考训基地</p><p><b>电话：</b>0371-66666128</p>"]
 	];
 	var icon = new BMap.Icon("img/map/tb.png", new BMap.Size(32, 40), {
 		imageSize: new BMap.Size(32, 40)

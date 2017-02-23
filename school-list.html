@@ -19,16 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="css/animate-min.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" media="only screen and (min-width:769px)" />
 		<link rel="stylesheet" type="text/css" href="css/index-xs.css" media="only screen and (max-width:768px)" />
-		<style type="text/css">
-			.zhiying-img {
-				display: block;
-			}
-			
-			.zhiying-img img {
-				display: block;
-				width: 100%;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/school.css" />
 		<script>
 			var _hmt = _hmt || [];
 			(function() {
@@ -79,233 +70,346 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
-		<style type="text/css">
-			.school-wrapper{
-				width: 1000px;
-				margin: 0 auto;
-			}
-			.selector{
-				font-size: 0;
-				line-height: 1;
-				margin: 35px 0;
-			}
-			.selector .label{
-				font-size: 16px;
-				margin-right: 10px;
-			}
-			.selector .item{
-				font-size: 16px;
-				margin-right: 30px;
-				cursor: pointer;
-			}
-			.selector .item.active{
-				color: #F4AF30;
-			}
-		</style>
 		<ariticle class="ariticle">
 			<section class="school-wrapper">
-					<div class="selector">
-						<span class="label">驾校类型：</span>
-						<span class="item active">不限</span>
-						<span class="item">C1小车手动档</span>
-						<span class="item">C2小车自动档</span>
-					</div>
-					<div class="selector">
-						<span class="label">练车区域：</span>
-						<span class="item active">不限</span>
-						<span class="item">中原区</span>
-						<span class="item">二七区</span>
-						<span class="item">管城区</span>
-						<span class="item">金水区</span>
-						<span class="item">惠济区</span>
-						<span class="item">经开区</span>
-						<span class="item">中牟县</span>
-						<span class="item">登封市</span>
-					</div>
-					<style type="text/css">
-						.selector-menu{
-							display: inline-block;
-							margin-bottom: 20px;
-							font-size: 0;
-						}
-						.selector-menu .item{
-							font-size: 16px;
-							display: inline-block;
-							height: 40px;
-							line-height: 40px;
-							background-color: #fff;
-							padding: 0 30px;
-							border-top: 1px solid #E6E6E6;
-							border-right: 1px solid #E6E6E6;
-							border-bottom: 1px solid #E6E6E6;
-							cursor: pointer;
-						}
-						.selector-menu .item:first-child{
-							border-left: 1px solid #E6E6E6;
-						}
-						.selector-menu .item.active{
-							color: #fff;
-							background-color: #F4AF30;
-							border: 1px solid #F4AF30;
-						}
-					</style>
-					<ul class="selector-menu">
-						<li class="item active">推荐</li>
-						<li class="item">练车近</li>
-						<li class="item">学费低</li>
-						<li class="item">评价好</li>
-					</ul>
-					<style type="text/css">
-						.school-list>.item{
-							margin-bottom: 20px;
-						}
-						.school-list .baseinfo{
-							display: inline-block;
-							width: 360px;
-							padding: 30px;
-							background-color: #FEF6E1;
-						}
-						.school-list .baseinfo>li{
-							display: inline-block;
-							width: 300px;
-							text-align: center;
-							margin-bottom: 10px;
-							font-size: 0;
-							line-height: 1;
-							white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-						}
-						.school-list .baseinfo>li:last-child{
-							margin-bottom: 0;
-						}
-						.school-list .baseinfo .headimg img{
-							display: block;
-							width: 120px;
-							height: 120px;
-							border-radius: 50%;
-							margin: 0 auto;
-						}
-						.school-list .baseinfo .name{
-							font-size: 20px;
-						}
-						.school-list .baseinfo .star{
-							display: inline-block;
-							width: 100px;
-							height: 16px;
-							background-image: url(img/school/star.png);
-						}
-						.school-list .baseinfo .star.star-5{
-							background-position: 0px;
-						}
-						.school-list .baseinfo .star.star-4{
-							background-position: -20px;
-						}
-						.school-list .baseinfo .star.star-3{
-							background-position: -40px;
-						}
-						.school-list .baseinfo .star.star-2{
-							background-position: -60px;
-						}
-						.school-list .baseinfo .star.star-1{
-							background-position: -80px;
-						}
-						.school-list .baseinfo .star.star-0{
-							background-position: -96px;
-						}
-						.school-list .baseinfo .text{
-							font-size: 14px;
-							color: #888;
-						}
-					</style>
-					<div id="schoolList" class="school-list">
-						<div class="item">
-							<ul class="baseinfo">
-								<li class="headimg"><img src="img/about/banner_xs.jpg"/></li>
-								<li class="name">交通技校老鸭陈校区</li>
-								<li><span class="star star-4"></span></li>
-								<li class="text">567人已报名</li>
-								<li class="text">最近训练场  4.0km 金水区</li>
-								<li class="text"><span class="icon-weizhi"></span>
-									郑州市长江路与江山路交叉口东200米路南大司空倒萨空间
-								</li>
-							</ul>
-							<div class="classes"></div>
+				<div class="selector">
+					<span class="label">驾校类型：</span>
+					<span class="item active">不限</span>
+					<span class="item">C1小车手动档</span>
+					<span class="item">C2小车自动档</span>
+				</div>
+				<div class="selector">
+					<span class="label">练车区域：</span>
+					<span class="item active">不限</span>
+					<span class="item">中原区</span>
+					<span class="item">二七区</span>
+					<span class="item">管城区</span>
+					<span class="item">金水区</span>
+					<span class="item">惠济区</span>
+					<span class="item">经开区</span>
+					<span class="item">中牟县</span>
+					<span class="item">登封市</span>
+				</div>
+				<ul class="selector-menu">
+					<li class="item active">推荐</li>
+					<li class="item">练车近</li>
+					<li class="item">学费低</li>
+					<li class="item">评价好</li>
+				</ul>
+				<div id="schoolList" class="school-list">
+					<div class="item">
+						<ul class="baseinfo">
+							<li class="headimg"><img src="img/about/banner_xs.jpg" /></li>
+							<li class="name">交通技校老鸭陈校区</li>
+							<li><span class="star star-4"></span></li>
+							<li class="text">567人已报名</li>
+							<li class="text">最近训练场 4.0km 金水区</li>
+							<li class="text"><span class="icon-weizhi"></span> 郑州市长江路与江山路交叉口东200米路南大司空倒萨空间
+							</li>
+						</ul>
+						<div class="classes">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+								</div>
+								<!-- 如果需要导航按钮 -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
 						</div>
 					</div>
-			</section>
-			<!--bottomMenu-->
-			<section class="visible-xs bg-grey">
-				<ul id="menu-wrapper" class="menu-wrapper">
-					<li class="item" data-num="0"><img src="img/bottom/dianhua.png" /></li>
-					<li class="item" data-num="1"><img src="img/bottom/dizhi.png" /></li>
-					<li class="item" data-num="2"><img src="img/bottom/weixin.png" /></li>
-					<li class="item" data-num="3"><img src="img/bottom/weibo.png" /></li>
-					<li class="item" data-num="4"><img src="img/bottom/QQ.png" /></li>
-				</ul>
-				<div id="menu-dailog" class="menu-dailog">
-					<img class="bgimg" src="img/bottom/bg.png" />
-					<div class="content">
-						<img src="img/bottom/weibohao.jpg" />
+					<div class="item">
+						<ul class="baseinfo">
+							<li class="headimg"><img src="img/about/banner_xs.jpg" /></li>
+							<li class="name">交通技校老鸭陈校区</li>
+							<li><span class="star star-4"></span></li>
+							<li class="text">567人已报名</li>
+							<li class="text">最近训练场 4.0km 金水区</li>
+							<li class="text"><span class="icon-weizhi"></span> 郑州市长江路与江山路交叉口东200米路南大司空倒萨空间
+							</li>
+						</ul>
+						<div class="classes">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+								</div>
+								<!-- 如果需要导航按钮 -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
 					</div>
-					<div class="close-btn">
-						<img src="img/bottom/gb.png" />
+					<div class="item">
+						<ul class="baseinfo">
+							<li class="headimg"><img src="img/about/banner_xs.jpg" /></li>
+							<li class="name">交通技校老鸭陈校区</li>
+							<li><span class="star star-4"></span></li>
+							<li class="text">567人已报名</li>
+							<li class="text">最近训练场 4.0km 金水区</li>
+							<li class="text"><span class="icon-weizhi"></span> 郑州市长江路与江山路交叉口东200米路南大司空倒萨空间
+							</li>
+						</ul>
+						<div class="classes">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+								</div>
+								<!-- 如果需要导航按钮 -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<ul class="baseinfo">
+							<li class="headimg"><img src="img/about/banner_xs.jpg" /></li>
+							<li class="name">交通技校老鸭陈校区</li>
+							<li><span class="star star-4"></span></li>
+							<li class="text">567人已报名</li>
+							<li class="text">最近训练场 4.0km 金水区</li>
+							<li class="text"><span class="icon-weizhi"></span> 郑州市长江路与江山路交叉口东200米路南大司空倒萨空间
+							</li>
+						</ul>
+						<div class="classes">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+								</div>
+								<!-- 如果需要导航按钮 -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<ul class="baseinfo">
+							<li class="headimg"><img src="img/about/banner_xs.jpg" /></li>
+							<li class="name">交通技校老鸭陈校区</li>
+							<li><span class="star star-4"></span></li>
+							<li class="text">567人已报名</li>
+							<li class="text">最近训练场 4.0km 金水区</li>
+							<li class="text"><span class="icon-weizhi"></span> 郑州市长江路与江山路交叉口东200米路南大司空倒萨空间
+							</li>
+						</ul>
+						<div class="classes">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+									<ul class="swiper-slide">
+										<li class="name">本地普通班C1</li>
+										<li class="point"><span>性价比高</span></li>
+										<li class="text">最快10天上车，10人/车，自行前往</li>
+										<li class="price"><span>￥</span><span class="big">2600</span><span class="old">原价：￥1980</span></li>
+										<li class="btn"><span>报名</span></li>
+									</ul>
+								</div>
+								<!-- 如果需要导航按钮 -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
-			<!--footer-->
-			<footer class="bottom-footer">
-				<ul class="text-wrapper">
-					<li class="hidden-xs">咨询热线：0371-66666128</li>
-					<li class="hidden-xs">公司地址：郑州市航海路与淮南街交叉口向南50米路东河南交院驾培服务大厅3楼</li>
-					<li>Copyright@2016郑州英驰驾培版权所有 <span class="hidden-xs">豫ICP备16033307号-2</span></li>
-					<li class="visible-xs">豫ICP备16033307号-2</li>
-				</ul>
-				<div class="code-wrapper hidden-xs">
-					<ul class="item">
-						<li class="codeimg">
-							<img src="img/footer/weixin_xz.png" />
-						</li>
-						<li class="iconimg">
-							<img src="img/footer/weixin.png" />
-						</li>
-					</ul>
-					<ul class="item">
-						<!--<li class="codeimg">
-							<img src="img/footer/weibo_xz.png" />
-						</li>-->
-						<li class="iconimg">
-							<a href="http://weibo.com/7712315">
-								<img src="img/footer/weibo.png" />
-							</a>
-						</li>
-					</ul>
-					<ul class="item">
-						<li class="codeimg">
-							<img src="img/footer/qq_xz.png" />
-						</li>
-						<li class="iconimg">
-							<img src="img/footer/qq.png" />
-						</li>
-					</ul>
-				</div>
-			</footer>
+
 		</ariticle>
-		<!--移动端底部fixed定位功能条-->
-		<aside class="fixed-menu-wrapper visible-xs">
-			<div class="fixed-menu">
-				<a class="item zixun udesk-hook-bottom" data-href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790">
-					<img src="img/fixed-menu/zixun.png" />
-					<span>咨询</span>
-				</a>
-				<a class="item bohao" href="tel: 0371-66666128">
-					<img src="img/fixed-menu/dianhua.png" />
-					<span>拨号</span>
-				</a>
-				<div id="baoming-btn" class="item baoming baoming-btn-hook">
-					<img src="img/fixed-menu/baoming.png" />
-					<span>我要报名</span>
-				</div>
+		<!--footer-->
+		<footer class="bottom-footer">
+			<ul class="text-wrapper">
+				<li class="hidden-xs">咨询热线：0371-66666128</li>
+				<li class="hidden-xs">公司地址：郑州市航海路与淮南街交叉口向南50米路东河南交院驾培服务大厅3楼</li>
+				<li>Copyright@2016郑州英驰驾培版权所有 <span class="hidden-xs">豫ICP备16033307号-2</span></li>
+				<li class="visible-xs">豫ICP备16033307号-2</li>
+			</ul>
+			<div class="code-wrapper hidden-xs">
+				<ul class="item">
+					<li class="codeimg">
+						<img src="img/footer/weixin_xz.png" />
+					</li>
+					<li class="iconimg">
+						<img src="img/footer/weixin.png" />
+					</li>
+				</ul>
+				<ul class="item">
+					<li class="iconimg">
+						<a href="http://weibo.com/7712315">
+							<img src="img/footer/weibo.png" />
+						</a>
+					</li>
+				</ul>
+				<ul class="item">
+					<li class="codeimg">
+						<img src="img/footer/qq_xz.png" />
+					</li>
+					<li class="iconimg">
+						<img src="img/footer/qq.png" />
+					</li>
+				</ul>
 			</div>
-		</aside>
+		</footer>
 		<!--右侧悬浮-->
 		<aside class="fixed-right-wrapper hidden-xs">
 			<ul id="fixed-right" class="content">
@@ -361,10 +465,12 @@
 							<option value="金水区">金水区</option>
 							<option value="二七区">二七区</option>
 							<option value="中原区">中原区</option>
+							<option value="高新区">高新区</option>
 							<option value="惠济区">惠济区</option>
 							<option value="管城区">管城区</option>
 							<option value="经开区">经开区</option>
 							<option value="中牟县">中牟县</option>
+							<option value="新郑市">新郑市</option>
 							<option value="登封市">登封市</option>
 						</select>
 						<div class="icon-xiala"></div>
@@ -415,21 +521,19 @@
 		<script src="js/submitInfo.js"></script>
 		<script type="text/javascript">
 			$(function() {
-				var baseNum = 173685;
-				baseDate = 1485136566699;
-				oneDay = 86400000;
-				nowDate = new Date().getTime(),
-					i = parseInt((nowDate - baseDate) / oneDay),
-					addNums = 179 * i,
-					newNums = baseNum + addNums,
-					arrNums = newNums.toString().split(""),
-					len = arrNums.length,
-					$studentNum = $("#studentNum"),
-					html = "";
-				for(var i = 0; i < len; i++) {
-					html += '<span>' + arrNums[i] + '</span>';
-				}
-				$studentNum.html(html);
+				var dHeight = $("body ").height(),
+					aHeight = (dHeight - 80) + "px";
+				$(".ariticle").css("min-height", aHeight);
+				var mySwiper = new Swiper('.swiper-container', {
+					slidesPerView: 3,
+					// 如果需要前进后退按钮
+					nextButton: '.swiper-button-next',
+					prevButton: '.swiper-button-prev'
+				});
+				//调转至详情
+				$('#schoolList').on("click",".baseinfo",function(){
+					location.href="school-detail.html?id=1";
+				});
 			})
 		</script>
 	</body>

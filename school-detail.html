@@ -19,16 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="css/animate-min.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" media="only screen and (min-width:769px)" />
 		<link rel="stylesheet" type="text/css" href="css/index-xs.css" media="only screen and (max-width:768px)" />
-		<style type="text/css">
-			.zhiying-img {
-				display: block;
-			}
-			
-			.zhiying-img img {
-				display: block;
-				width: 100%;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/school-detail.css" />
 		<script>
 			var _hmt = _hmt || [];
 			(function() {
@@ -80,80 +71,49 @@
 			<!-- /.container-fluid -->
 		</nav>
 		<ariticle class="ariticle">
-			<!--bottomMenu-->
-			<section class="visible-xs bg-grey">
-				<ul id="menu-wrapper" class="menu-wrapper">
-					<li class="item" data-num="0"><img src="img/bottom/dianhua.png" /></li>
-					<li class="item" data-num="1"><img src="img/bottom/dizhi.png" /></li>
-					<li class="item" data-num="2"><img src="img/bottom/weixin.png" /></li>
-					<li class="item" data-num="3"><img src="img/bottom/weibo.png" /></li>
-					<li class="item" data-num="4"><img src="img/bottom/QQ.png" /></li>
-				</ul>
-				<div id="menu-dailog" class="menu-dailog">
-					<img class="bgimg" src="img/bottom/bg.png" />
-					<div class="content">
-						<img src="img/bottom/weibohao.jpg" />
-					</div>
-					<div class="close-btn">
-						<img src="img/bottom/gb.png" />
-					</div>
-				</div>
+			<section class="bread-nav">
+				<a href="index.html">首页</a>>
+				<a href="school-list.html">找驾校</a>>
+				<span href="#" class="color-red">驾校详情</span>
 			</section>
-			<!--footer-->
-			<footer class="bottom-footer">
-				<ul class="text-wrapper">
-					<li class="hidden-xs">咨询热线：0371-66666128</li>
-					<li class="hidden-xs">公司地址：郑州市航海路与淮南街交叉口向南50米路东河南交院驾培服务大厅3楼</li>
-					<li>Copyright@2016郑州英驰驾培版权所有 <span class="hidden-xs">豫ICP备16033307号-2</span></li>
-					<li class="visible-xs">豫ICP备16033307号-2</li>
-				</ul>
-				<div class="code-wrapper hidden-xs">
-					<ul class="item">
-						<li class="codeimg">
-							<img src="img/footer/weixin_xz.png" />
-						</li>
-						<li class="iconimg">
-							<img src="img/footer/weixin.png" />
-						</li>
-					</ul>
-					<ul class="item">
-						<!--<li class="codeimg">
-							<img src="img/footer/weibo_xz.png" />
-						</li>-->
-						<li class="iconimg">
-							<a href="http://weibo.com/7712315">
-								<img src="img/footer/weibo.png" />
-							</a>
-						</li>
-					</ul>
-					<ul class="item">
-						<li class="codeimg">
-							<img src="img/footer/qq_xz.png" />
-						</li>
-						<li class="iconimg">
-							<img src="img/footer/qq.png" />
-						</li>
-					</ul>
-				</div>
-			</footer>
+			<section class="info-top">
+
+			</section>
 		</ariticle>
-		<!--移动端底部fixed定位功能条-->
-		<aside class="fixed-menu-wrapper visible-xs">
-			<div class="fixed-menu">
-				<a class="item zixun udesk-hook-bottom" data-href="http://p.qiao.baidu.com/cps/chat?siteId=10309621&userId=23028790">
-					<img src="img/fixed-menu/zixun.png" />
-					<span>咨询</span>
-				</a>
-				<a class="item bohao" href="tel: 0371-66666128">
-					<img src="img/fixed-menu/dianhua.png" />
-					<span>拨号</span>
-				</a>
-				<div id="baoming-btn" class="item baoming baoming-btn-hook">
-					<img src="img/fixed-menu/baoming.png" />
-					<span>我要报名</span>
-				</div>
+		<!--footer-->
+		<footer class="bottom-footer">
+			<ul class="text-wrapper">
+				<li class="hidden-xs">咨询热线：0371-66666128</li>
+				<li class="hidden-xs">公司地址：郑州市航海路与淮南街交叉口向南50米路东河南交院驾培服务大厅3楼</li>
+				<li>Copyright@2016郑州英驰驾培版权所有 <span class="hidden-xs">豫ICP备16033307号-2</span></li>
+				<li class="visible-xs">豫ICP备16033307号-2</li>
+			</ul>
+			<div class="code-wrapper hidden-xs">
+				<ul class="item">
+					<li class="codeimg">
+						<img src="img/footer/weixin_xz.png" />
+					</li>
+					<li class="iconimg">
+						<img src="img/footer/weixin.png" />
+					</li>
+				</ul>
+				<ul class="item">
+					<li class="iconimg">
+						<a href="http://weibo.com/7712315">
+							<img src="img/footer/weibo.png" />
+						</a>
+					</li>
+				</ul>
+				<ul class="item">
+					<li class="codeimg">
+						<img src="img/footer/qq_xz.png" />
+					</li>
+					<li class="iconimg">
+						<img src="img/footer/qq.png" />
+					</li>
+				</ul>
 			</div>
-		</aside>
+		</footer>
 		<!--右侧悬浮-->
 		<aside class="fixed-right-wrapper hidden-xs">
 			<ul id="fixed-right" class="content">
@@ -209,10 +169,12 @@
 							<option value="金水区">金水区</option>
 							<option value="二七区">二七区</option>
 							<option value="中原区">中原区</option>
+							<option value="高新区">高新区</option>
 							<option value="惠济区">惠济区</option>
 							<option value="管城区">管城区</option>
 							<option value="经开区">经开区</option>
 							<option value="中牟县">中牟县</option>
+							<option value="新郑市">新郑市</option>
 							<option value="登封市">登封市</option>
 						</select>
 						<div class="icon-xiala"></div>
@@ -256,6 +218,10 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+		<script type="text/javascript">
+			console.log(remote_ip_info);
+		</script>
 		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
 		<script type="text/javascript" src="js/swiper.min.js"></script>
@@ -263,21 +229,19 @@
 		<script src="js/submitInfo.js"></script>
 		<script type="text/javascript">
 			$(function() {
-				var baseNum = 173685;
-				baseDate = 1485136566699;
-				oneDay = 86400000;
-				nowDate = new Date().getTime(),
-					i = parseInt((nowDate - baseDate) / oneDay),
-					addNums = 179 * i,
-					newNums = baseNum + addNums,
-					arrNums = newNums.toString().split(""),
-					len = arrNums.length,
-					$studentNum = $("#studentNum"),
-					html = "";
-				for(var i = 0; i < len; i++) {
-					html += '<span>' + arrNums[i] + '</span>';
-				}
-				$studentNum.html(html);
+				var dHeight = $("body ").height(),
+					aHeight = (dHeight - 80) + "px";
+				$(".ariticle").css("min-height", aHeight);
+				var mySwiper = new Swiper('.swiper-container', {
+					slidesPerView: 3,
+					// 如果需要前进后退按钮
+					nextButton: '.swiper-button-next',
+					prevButton: '.swiper-button-prev'
+				});
+				//调转至详情
+				$('#schoolList').on("click", ".baseinfo", function() {
+					location.href = "school-detail.html?id=1";
+				});
 			})
 		</script>
 	</body>

@@ -1,0 +1,251 @@
+html,
+body {
+	height: 100%;
+	background-color: #F4F4F4;
+}
+
+.navbar {
+	height: 80px;
+}
+
+.ariticle {
+	display: block;
+	padding-top: 35px;
+	padding-bottom: 160px;
+}
+
+.bottom-footer {
+	margin-top: -160px;
+}
+
+.zhiying-img {
+	display: block;
+}
+
+.zhiying-img img {
+	display: block;
+	width: 100%;
+}
+
+.school-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.selector {
+	font-size: 0;
+	line-height: 1;
+	margin-bottom: 35px;
+}
+
+.selector .label {
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.selector .item {
+	font-size: 16px;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.selector .item.active {
+	color: #F4AF30;
+}
+
+.selector-menu {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 0;
+}
+
+.selector-menu .item {
+	font-size: 16px;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	padding: 0 30px;
+	border-top: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+	cursor: pointer;
+}
+
+.selector-menu .item:first-child {
+	border-left: 1px solid #E6E6E6;
+}
+
+.selector-menu .item.active {
+	color: #fff;
+	background-color: #F4AF30;
+	border: 1px solid #F4AF30;
+}
+
+.school-list>.item {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.school-list .baseinfo {
+	display: inline-block;
+	flex: 0 0 360px;
+	padding: 30px;
+	background-color: #FEF6E1;
+	cursor: pointer;
+}
+
+.school-list .baseinfo>li {
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 0;
+	line-height: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.school-list .baseinfo>li:last-child {
+	margin-bottom: 0;
+}
+
+.school-list .baseinfo .headimg img {
+	display: block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.school-list .baseinfo .name {
+	font-size: 20px;
+}
+
+.school-list .baseinfo .star {
+	display: inline-block;
+	width: 100px;
+	height: 16px;
+	background-image: url(../img/school/star.png);
+}
+
+.school-list .baseinfo .star.star-5 {
+	background-position: 0px;
+}
+
+.school-list .baseinfo .star.star-4 {
+	background-position: -20px;
+}
+
+.school-list .baseinfo .star.star-3 {
+	background-position: -40px;
+}
+
+.school-list .baseinfo .star.star-2 {
+	background-position: -60px;
+}
+
+.school-list .baseinfo .star.star-1 {
+	background-position: -80px;
+}
+
+.school-list .baseinfo .star.star-0 {
+	background-position: -96px;
+}
+
+.school-list .baseinfo .text {
+	font-size: 14px;
+	color: #888;
+}
+
+.icon-weizhi {
+	display: inline-block;
+	width: 12px;
+	height: 14px;
+	background-image: url(../img/school/dingwei.png);
+	background-size: 100% 100%;
+	vertical-align: top;
+}
+
+.classes {
+	display: inline-block;
+}
+
+.classes .swiper-wrapper {
+	width: 840px;
+	height: 335px;
+}
+
+.classes .swiper-slide {
+	padding: 40px 35px 0 35px;
+	border-right: 1px solid #E6E6E6;
+	background-color: #fff;
+}
+
+.classes .swiper-slide>li {
+	margin-bottom: 30px;
+	line-height: 1;
+	text-align: center;
+}
+
+.classes .swiper-slide .name {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.classes .swiper-slide .point>span {
+	display: inline-block;
+	font-size: 14px;
+	padding: 5px 15px;
+	color: #297BD4;
+	border: 1px solid #297BD4;
+	border-radius: 13px;
+}
+
+.classes .swiper-slide .text {
+	font-size: 14px;
+	line-height: 20px;
+	height: 40px;
+}
+
+.classes .swiper-slide .price {
+	font-size: 14px;
+}
+
+.classes .swiper-slide .price .big {
+	font-size: 1.8em;
+	color: #DF0F21;
+	margin-right: 5px;
+}
+
+.classes .swiper-slide .price .old {
+	text-decoration: line-through;
+}
+
+.classes .swiper-slide .btn>span {
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #DF0F21;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.swiper-button-prev {
+	width: 50px;
+	height: 50px;
+	left: 15px;
+	background-image: url(../img/school/l_qiehuan.png);
+	background-size: 100% 100%;
+}
+
+.swiper-button-next {
+	width: 50px;
+	height: 50px;
+	right: 15px;
+	background-image: url(../img/school/r_qiehuan.png);
+	background-size: 100% 100%;
+}

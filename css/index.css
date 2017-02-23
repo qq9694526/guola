@@ -406,6 +406,24 @@ body {
 	bottom: 8.56%;
 	opacity: 1;
 }
+.fenbu-warpper .bubble.bubble-xinzheng {
+	left: 68.17%;
+	bottom: 0%;
+}
+
+.fenbu-warpper .bubble.bubble-xinzheng.active {
+	bottom: 1.56%;
+	opacity: 1;
+}
+.fenbu-warpper .bubble.bubble-gaoxin {
+	left: 0.17%;
+	bottom: 0%;
+}
+
+.fenbu-warpper .bubble.bubble-gaoxin.active {
+	bottom: 55.56%;
+	opacity: 1;
+}
 .fenbu-warpper .bubble.bubble-zijian1 {
 	left: 88.79%;
 	bottom: 0%;
@@ -510,7 +528,7 @@ body {
 	text-align: center;
 	font-weight: 400;
 	font-size: 12px;
-	margin: 0 15px;
+	margin: 0 5px;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	cursor: pointer;
